@@ -18,6 +18,15 @@ function getAllFunctions(){
 			if (!is_dir($funcPath)) {
 				mkdir($funcPath);
 			}
+			//生成文件
+			$file = $funcPath."\\index.json";
+			//函数模板文件
+			$Template = '
+			{
+				"functionname": "'.$v.'",
+			}
+			';
+			file_put_contents($file, $Template);
 		}
 	}
 }
@@ -34,6 +43,15 @@ function getAllInterface(){
 		if (!is_dir($path)) {
 			mkdir($path);
 		}
+		//生成文件
+		$file = $path."\\index.json";
+		//函数模板文件
+		$Template = '
+		{
+			"interfacename": "'.$value.'",
+		}
+		';
+		file_put_contents($file, $Template);
 	}
 }
 //获取所有类
@@ -49,6 +67,15 @@ function getAllClasses(){
 		if (!is_dir($path)) {
 			mkdir($path);
 		}
+		//生成文件
+		$file = $path."\\index.json";
+		//函数模板文件
+		$Template = '
+		{
+			"classname": "'.$value.'",
+		}
+		';
+		file_put_contents($file, $Template);
 	}
 }
 //获取所有traits
@@ -64,6 +91,15 @@ function getAllTraits(){
 		if (!is_dir($path)) {
 			mkdir($path);
 		}
+		//生成文件
+		$file = $path."\\index.json";
+		//函数模板文件
+		$Template = '
+		{
+			"traitname": "'.$value.'",
+		}
+		';
+		file_put_contents($file, $Template);
 	}
 }
 
