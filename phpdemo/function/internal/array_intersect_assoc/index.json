@@ -1,5 +1,40 @@
-
-			{
-				"functionname": "array_intersect_assoc",
-			}
-			
+{
+  "name": "array_intersect_assoc",
+  "dep":[
+    "PHP4 >= 4.3.0",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_intersect_assoc(array $array1, array $array2 [,array $...] )",
+  "detail" :"获取数组的交集，比较数组的键名与键值",
+  "param": [
+    {
+      "name": "$array1",
+      "type": "array",
+      "detail" : "待比较的数组",
+      "must": true
+    },
+    {
+      "name": "$array2",
+      "type": "array",
+      "detail" : "待比较的数组",
+      "must": true
+    },
+    {
+      "name": "$...",
+      "type": "array",
+      "detail" : "其他待比较的数组",
+      "must": false
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回交集数组"
+    }
+  ],
+  "info": [
+    "比较数组的键名与键值来获取交集"
+  ]
+}
