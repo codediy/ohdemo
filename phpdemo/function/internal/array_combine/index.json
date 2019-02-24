@@ -1,5 +1,32 @@
-
-			{
-				"functionname": "array_combine",
-			}
-			
+{
+  "name": "array_combine",
+  "dep": [
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_combine(array $keys,array $values )",
+  "detail": "使用两个数组创建一个数组，第一个数组作为键名，第二个数组作为键值",
+  "param": [
+    {
+      "name": "$keys",
+      "type": "array",
+      "detail": "作为键名的数组"
+    },
+    {
+      "name": "$values",
+      "type": "array",
+      "detail" : "作为键值的数组"
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回创建的数组"
+    }
+  ],
+  "info": [
+    "$keys与$values的元素个数必须相同",
+    "$keys与$values的元素个数不同，则返回FALSE，抛出一个警告错误E_WARING",
+  ]
+}
