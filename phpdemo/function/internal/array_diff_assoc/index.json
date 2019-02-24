@@ -1,5 +1,32 @@
-
-			{
-				"functionname": "array_diff_assoc",
-			}
-			
+{
+  "name": "array_diff_assoc",
+  "dep":[
+    "PHP4 >= 4.3.0",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_diff_assoc(array $array1, array $array2 [,array $...] )",
+  "detail" :"查找在$array1中并且不在$array2中的元素，键名也参与比较",
+  "param": [
+    {
+      "name": "$array1",
+      "type": "array",
+      "detail" : "比较的第一个数组"
+    }
+  ],
+  "return": [
+    {
+      "name": "$array2",
+      "type": "array",
+      "detail": "比较的第二个数组"
+    },
+    {
+      "name": "$...",
+      "type": "array",
+      "detail" : "多个待比较数组"
+    }
+  ],
+  "info": [
+    "array_diff()根据元素的值是否相同,array_diff_assoc()则比较元素的值与键名"
+  ]
+}
