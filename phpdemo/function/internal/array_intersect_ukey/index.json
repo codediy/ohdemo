@@ -1,5 +1,45 @@
-
-			{
-				"functionname": "array_intersect_ukey",
-			}
-			
+{
+  "name": "array_intersect_ukey",
+  "dep":[
+    "PHP5 >= 5.1.0",
+    "PHP7"
+  ],
+  "fun": "array array_intersect_ukey(array $array1,array $array2 [,array $...], callable $key_compare_func )",
+  "detail" :"使用自定义函数比较键名 获取数组的交集",
+  "param": [
+    {
+      "name": "$array1",
+      "type": "array",
+      "detail" : "待比较的第一个数组",
+      "must": true
+    },
+    {
+      "name": "$array2",
+      "type": "array",
+      "detail" : "待比较的第二个数组",
+      "must": true
+    },
+    {
+      "name": "$...",
+      "type": "array",
+      "detail" : "待比较的其他数组",
+      "must": false
+    },
+    {
+      "name": "$key_compare_func",
+      "type": "callable",
+      "detail" : "自定义的比较函数",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "比较后的交集数组"
+    }
+  ],
+  "info": [
+    "使用自定义函数比较数组的键名，获取同时存在的键名的交集数组"
+  ]
+}
