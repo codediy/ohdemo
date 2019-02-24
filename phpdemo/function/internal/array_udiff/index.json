@@ -1,5 +1,45 @@
-
-			{
-				"functionname": "array_udiff",
-			}
-			
+{
+  "name": "array_udiff",
+  "dep":[
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_udiff(array $array1,array $array2 [,array $...],callable $data_compare_func )",
+  "detail" :"使用自定义函数比较数组的值，返回数组的差集",
+  "param": [
+    {
+      "name": "$array1",
+      "type": "array",
+      "detail" : "待比较的第一个数组",
+      "must": true
+    },
+    {
+      "name": "$array2",
+      "type": "array",
+      "detail" : "待比较的第二个数组",
+      "must": true
+    },
+    {
+      "name": "$...",
+      "type": "array",
+      "detail" : "待比较的其他数组",
+      "must": false
+    },
+    {
+      "name": "$data_compare_func",
+      "type": "callable",
+      "detail" : "自定义的比较函数",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回差集数组"
+    }
+  ],
+  "info": [
+    "使用自定义函数比较数组的值 返回差集数组"
+  ]
+}
