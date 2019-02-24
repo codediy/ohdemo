@@ -1,5 +1,34 @@
-
-			{
-				"functionname": "array_key_exists",
-			}
-			
+{
+  "name": "array_key_exists",
+  "dep":[
+    "PHP4 >= 4.0.7",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "bool array_key_exists(mixed $key,array $search )",
+  "detail" :"检查数组中是否存在$key的键名",
+  "param": [
+    {
+      "name": "$key",
+      "type": "mixed",
+      "detail" : "待查找的键名",
+      "must": true
+    },
+    {
+      "name": "$search",
+      "type": "array",
+      "detail" : "待搜索的数组",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "bool",
+      "detail": "返回是否存在$key键名"
+    }
+  ],
+  "info": [
+    "存在则返回TRUE,不存在返回FALSE"
+  ]
+}
