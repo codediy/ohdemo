@@ -1,5 +1,40 @@
-	
-			{
-				"functionname": "array_fill",
-			}
-			
+{
+  "name": "array_fill",
+  "dep":[
+    "PHP4 >= 4.2.0",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_fill(int $start_index,int num,mixed $value )",
+  "detail" :"使用$value创建$num个元素的数组",
+  "param": [
+    {
+      "name": "$start_index",
+      "type": "int",
+      "detail" : "返回的数组的第一个索引值",
+      "must": true
+    },
+    {
+      "name": "$num",
+      "type": "int",
+      "detail" : "填充的个数",
+      "must": true
+    },
+    {
+      "name": "$value",
+      "type": "mixed",
+      "detail" : "填充的值",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回填充后生成的数组"
+    }
+  ],
+  "info": [
+    "如果num小于1，则抛出错误警告E_WARNING",
+  ]
+}
