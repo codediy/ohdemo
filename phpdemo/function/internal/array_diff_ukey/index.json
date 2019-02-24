@@ -1,5 +1,45 @@
-
-			{
-				"functionname": "array_diff_ukey",
-			}
-			
+{
+  "name": "array_diff_ukey",
+  "dep":[
+    "PHP5 >= 5.1.0",
+    "PHP7"
+  ],
+  "fun": "array array_diff_ukey(array $array1,array $array2 [,array $...],callback $key_compare_func )",
+  "detail" :"使用自定义函数比较元素的差集 ，只比较键名",
+  "param": [
+    {
+      "name": "$array1",
+      "type": "array",
+      "detail" : "待比较的第一个数组",
+      "must": true
+    },
+    {
+      "name": "$array2",
+      "type": "array",
+      "detail" : "待比较的第二个数组",
+      "must": true
+    },
+    {
+      "name": "$..",
+      "type": "array",
+      "detail" : "待比较的其他数组",
+      "must": false
+    },
+    {
+      "name": "$key_compare_func",
+      "type": "int callback(mixed $a,mixed $b)",
+      "detail" : "自定义的比较函数",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回比较后的差集"
+    }
+  ],
+  "info": [
+    "key_compare_func回调函数返回大于 等于 或小于0的值表示第一个参数 大于 等于或小于第二个参数"
+  ]
+}
