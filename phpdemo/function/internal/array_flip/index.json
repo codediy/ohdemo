@@ -1,5 +1,31 @@
-
-			{
-				"functionname": "array_flip",
-			}
-			
+{
+  "name": "array_flip",
+  "dep": [
+    "PHP4",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_flip($array $input)",
+  "detail": "交互数组的键和值",
+  "param": [
+    {
+      "name": "$input",
+      "type": "array",
+      "detail": "待处理数组",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "处理后的数组"
+    }
+  ],
+  "info": [
+    "返回一个反转后的数组，$input的键名变成值,$input的值变成键名",
+    "$input的值如果不是integer或string的将抛出错误姜戈，并且不进行反转",
+    "如果同一个值出现了多次，最后一个键名作为它的值"
+    "交换失败返回NULL"
+  ]
+}
