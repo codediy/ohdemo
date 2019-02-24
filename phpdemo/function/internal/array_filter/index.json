@@ -1,5 +1,42 @@
-
-			{
-				"functionname": "array_filter",
-			}
-			
+{
+  "name": "array_filter",
+  "dep":[
+    "PHP4 >= 4.0.6",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_filter(array $array,[,callable $callback [,int $flag = 0]] )",
+  "detail" :"使用回调函数过滤数组",
+  "param": [
+    {
+      "name": "$array",
+      "type": "array",
+      "detail" : "待操作的数组",
+      "must": true
+    },
+    {
+      "name": "$callback",
+      "type": "callable",
+      "detail" : "自定义的回调函数",
+      "must": false
+    },
+    {
+      "name": "$flag",
+      "type": "int",
+      "detail" : "callback接受的参数形式。 默认 = 0 只接受元素的值,ARRAY_FILTER_USE_BOT = 1 接受键名和键值作为参数，ARRAY_FILTER_USE_KEY = 2 只接受键名,",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回过滤后的数组"
+    }
+  ],
+  "info": [
+    "flag = 0时 接受数组值 bool callback($v)",
+    "flag = 1时 接受数组键与数组值bool callback($v,$k)",
+    "flag = 2时 接受数组键 bool callback($k)"
+  ]
+}
