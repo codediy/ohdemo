@@ -1,0 +1,7 @@
+,
+{
+  "name": "$argname$",
+  "type": "$argtype$",
+  "detail" : "$argdetail$",
+  "must": true
+}

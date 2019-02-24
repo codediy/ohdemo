@@ -1,0 +1,29 @@
+{
+  "name": "$fun$",
+  "dep":[
+    "PHP4 >= $v4$",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "$rtype$ $fun$($atype$ $arg1$)",
+  "detail" :"$detail$",
+  "param": [
+    {
+      "name": "$argname$",
+      "type": "$argtype$",
+      "detail" : "$argdetail$",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$returnname$",
+      "type": "$returntype$",
+      "detail": "$returndetail$"
+    }
+  ],
+  "info": [
+    "$info1$",
+    "$info2$"
+  ]
+}
