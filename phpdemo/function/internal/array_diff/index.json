@@ -1,4 +1,37 @@
 {
-	"name": "array_diff"
+  "name": "array_diff",
+  "fun":"array array_diff(array $array1,array $array2 [,$array $...])",
+  "param": [
+    {
+      "name": "$array1",
+      "type": "array",
+      "detail": "比较的第一个数组",
+      "must": true
+    },
+    {
+      "name": "$array2",
+      "type": "array",
+      "detail": "比较的第二个数组",
+      "must": true
+    },
+    {
+      "name": "$...",
+      "type": "array*",
+      "detail": "其他需要比较的数组",
+      "must": false
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "在$array1中并且不在$array2以及其他的参数数组的值"
+    }
+  ],
+  "info":[
+    "从$array1中去除$array2以及其他数组中的值，键名保持与$array1的相同",
+    "可选参数$...表示后面可以添加多个数组 如array_diff($arr1,$arr2,$arr3,$arr4)"
+  ]
+
 }
 			
