@@ -1,5 +1,33 @@
-
-			{
-				"functionname": "array_fill_keys",
-			}
-			
+{
+  "name": "array_fill_keys",
+  "dep":[
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_fill_keys(array $keys,mixed $value )",
+  "detail" :"使用$keys作为键名,$value作为键值填充数组",
+  "param": [
+    {
+      "name": "$keys",
+      "type": "array",
+      "detail" : "键名数组",
+      "must": true
+    },
+    {
+      "name": "$value",
+      "type": "mixed",
+      "detail" : "待填充的值",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回填充后的数组"
+    }
+  ],
+  "info": [
+    "用来创建键名自定义，键值相同的数组"
+  ]
+}
