@@ -1,5 +1,45 @@
-
-			{
-				"functionname": "array_diff_uassoc",
-			}
-			
+{
+  "name": "array_diff_uassoc",
+  "dep": [
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_diff_uassoc(array $array1,array $array2 [,array $..],callable $key_compare_func )",
+  "detail": "使用自定义函数获取数组差集",
+  "param": [
+    {
+      "name": "$array1",
+      "type": "array",
+      "detail": "比较的第一个数组",
+      "must": true
+    },
+    {
+      "name": "$array2",
+      "type": "array",
+      "detail": "比较的第二个数组",
+      "must": true
+    },
+    {
+      "name": "$...",
+      "type": "array",
+      "detail": "更多待比较数据",
+      "must": false
+    },
+    {
+      "name": "$key_compare_func",
+      "type": "int callback(mixed $a,mixed $b)",
+      "detail" : "自定义的比较函数",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回差集数组"
+    }
+  ],
+  "info": [
+    "key_compare_func的参数是待比较的两个值，返回值为小于 等于或大于0的整数，表示第一个参数 小于 等于或大于第二个参数",
+  ]
+}
