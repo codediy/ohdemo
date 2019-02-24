@@ -1,6 +1,12 @@
 {
   "name": "array_diff",
-  "fun":"array array_diff(array $array1,array $array2 [,$array $...])",
+  "dep": [
+    "PHP4 >= 4.0.1",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun":"array array_diff(array $array1,array $array2 [,array $...])",
+  "detail": "获取$array1中不在$array2以及多个数组的元素",
   "param": [
     {
       "name": "$array1",

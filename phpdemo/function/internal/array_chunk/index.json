@@ -1,5 +1,43 @@
+{
+	"name": "array_chunk",
+	"dep": [
+		"PHP4 >= 4.2.0",
+		"PHP5",
+		"PHP7"
+	],
+	"fun":"array array_chunk(array $input,int $size [,bool $preserve_keys = false])",
+	"detail": "按照$size拆分数组$input",
+	"param": [
+		{
+			"name": "$input",
+			"type": "array",
+			"detail": "拆分的数组",
+			"must": true
+		},
+		{
+			"name": "$size",
+			"type": "int",
+			"detail": "拆分后每个数组的元素个数",
+			"must": true
+		},
+		{
+			"name": "$preserver_keys",
+			"type": "bool",
+			"detail": "是否保留键名,TRUE 保留 FALSE 从零开始的新数字索引,默认FALSE",
+			"must": false
+		}
+	],
+	"return": [
+		{
+			"name": "$return",
+			"type": "array",
+			"detail": "返回拆分后多个数组组成的数组"
+		}
+	],
+	"info":[
+		"拆分目标数组$input为多个数组，每个数组包含$size个元素数组，最后一个数组包含剩余的元素",
+		"返回值是一个二维数组，每个元素是$size个元素的数组",
+		"size如果小于1，抛出E_WARING错误并返回NULL"
+	]
+}
 
-			{
-				"functionname": "array_chunk",
-			}
-			

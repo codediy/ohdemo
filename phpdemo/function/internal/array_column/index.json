@@ -1,5 +1,38 @@
-
-			{
-				"functionname": "array_column",
-			}
-			
+{
+  "name": "array_column",
+  "dep":[
+    "PHP5 >=5.5.0",
+    "PHP7"
+  ],
+  "fun": "array array_column(array $input,mixed $column_key [,mixed $index_key] )",
+  "detail" :"返回多维数组$input中元素键名为column_key的数组元素",
+  "param": [
+    {
+      "name": "$input",
+      "type": "array",
+      "detail" : "操作的目标多维数组"
+    },
+    {
+      "name": "$column_key",
+      "type": "mixed",
+      "detail" : "需要获取的列明名"
+    },
+    {
+      "name": "$index_key",
+      "type": "mixed",
+      "detail" : "返回数组的索引"
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回的结果列数组"
+    }
+  ],
+  "info": [
+    "操作的目标数组是一个多维数组",
+    "$index_key是多维数组中子数组的一个键名",
+    "$column_key是NULL，返回整个数组,可以配合index_key来重置每个列的键名"
+  ]
+}
