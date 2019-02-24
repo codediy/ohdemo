@@ -1,5 +1,38 @@
-
-			{
-				"functionname": "array_diff_key",
-			}
-			
+{
+  "name": "array_diff_key",
+  "dep": [
+    "PHP5 >=5.1.0",
+    "PHP7"
+  ],
+  "fun": "array array_diff_key(array $array1,array $array2,[,array $...] )",
+  "detail": "获取在$array1中并且不在$array2的元素,只比较键名",
+  "param": [
+    {
+      "name": "$array1",
+      "type": "array",
+      "detail": "比较的第一个数组"
+    },
+    {
+      "name": "$array2",
+      "type": "array",
+      "detail": "比较的第二个数组"
+    },
+    {
+      "name": "$...",
+      "type": "array",
+      "detail": "其他待比较的数组"
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回在$array1中并且不在$array2以及其他数组中的元素的键名的值"
+    }
+  ],
+  "info": [
+    "array_diff_key()根据键名比较，获取差集",
+    "array_diff() 根据键值比较，获取差集",
+    "array_diff_assoc() 同时比较键名与键值，获取差集"
+  ]
+}
