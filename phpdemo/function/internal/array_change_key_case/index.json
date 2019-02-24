@@ -1,5 +1,33 @@
-
-			{
-				"functionname": "array_change_key_case",
-			}
-			
+{
+  "name": "array_change_key_case",
+  "dep":[
+    "PHP4 >= 4.2.0",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_change_key_case(array $input [,int case = CASE_LOWER] )",
+  "detail" :"修改数组元素键名大小写",
+  "param": [
+    {
+      "name": "$input",
+      "type": "array",
+      "detail" : "需要修改的数组"
+    },
+    {
+      "name": "$case",
+      "type": "int",
+      "detail" : "CASE_UPPER 大写 CASE_LOWER 小写"
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回修改后的数组	"
+    }
+  ],
+  "info": [
+    "修改后的数组全部大写或小写",
+    "$input不是数组，返回FALSE，抛出一个错误警告"
+  ]
+}
