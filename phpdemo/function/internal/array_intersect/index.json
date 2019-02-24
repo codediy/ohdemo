@@ -1,5 +1,40 @@
-
-			{
-				"functionname": "array_intersect",
-			}
-			
+{
+  "name": "array_intersect",
+  "dep":[
+    "PHP4 >= 4.0.1",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_intersect(array $array1, array $array2,[,array $...])",
+  "detail" :"获取数组的交集",
+  "param": [
+    {
+      "name": "$array1",
+      "type": "array",
+      "detail" : "待比较的第一个数组",
+      "must": true
+    },
+    {
+      "name": "$array2",
+      "type": "array",
+      "detail" : "待比较的第二个数组",
+      "must": true
+    },
+    {
+      "name": "$...",
+      "type": "array",
+      "detail" : "待比较的其他数组",
+      "must": false
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回比较后的交集数组"
+    }
+  ],
+  "info": [
+    "只比较数组的值",
+  ]
+}
