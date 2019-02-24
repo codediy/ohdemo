@@ -1,5 +1,28 @@
-
-			{
-				"functionname": "array_count_values",
-			}
-			
+{
+  "name": "array_count_values",
+  "dep":[
+    "PHP4",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "array array_count_values(array $input )",
+  "detail" :"统计数组中所有值出现的次数",
+  "param": [
+    {
+      "name": "$input",
+      "type": "array",
+      "detail" : "需要操作的数组"
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回一个数组，数组的键名是$input中的值,数组的值是键名在$input出现的次数"
+    }
+  ],
+  "info": [
+    "$input数组元素通常是string和integer类型",
+    "$input数组元素不是string和integer，抛出警告错误E_WARING"
+  ]
+}
