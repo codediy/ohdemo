@@ -111,6 +111,51 @@ function index(){
 	getAllTraits();
 }
 
-index();
+//index();
+
+
+//生成类的函数
+function getClassMethods(){
+	$classes = get_declared_classes();
+	$basePath = $path = dirname(__DIR__)."\\class\\";
+	createDir($basePath);	
+	foreach ($classes as $key => $value) {
+		//根目录生成
+		$path = $basePath.$value;
+		createDir($path);	
+		$methods = get_class_methods($value);
+		if ($methods) {
+			$methodPath = $path."\\Methods\\";
+			createDir($methodPath);	
+			foreach ($methods as $mk => $mv) {
+				$methodDir = $methodPath.$mv;
+				/*创建方法目录*/
+				createDir($methodDir);
+				/*创建方法文件*/
+				$methodFile = $methodDir."\\index.json";
+				methodFile($methodFile,$value,$mv);	
+			}
+		}
+	}
+}
+
+
+/*创建类的方法文件*/
+function methodFile($file,$class,$method){
+	$content = ["class"=>$class,"methodName"=>$method];
+	createFile($file,json_encode($content));
+}
+
+function createDir($path){
+	if (!is_dir($path)) {
+		mkdir($path);
+	}
+}
+function createFile($file,$content){
+	file_put_contents($file,$content);
+}
+ 
+
+ getClassMethods();
 
  ?>

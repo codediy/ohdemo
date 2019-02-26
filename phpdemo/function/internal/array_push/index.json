@@ -1,5 +1,5 @@
-
-			{
-				"functionname": "array_push",
-			}
+{
+	"fun": "array_push",
+	"type":"int array_push(array )"
+}
 			
