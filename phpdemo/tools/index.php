@@ -139,6 +139,40 @@ function getInterfaceMethods(){
 	}
 }
 
+//生成类的属性
+function getClassPropertys(){
+	$classes = get_declared_classes();
+	$basePath = $path = dirname(__DIR__)."\\class\\";
+	createDir($basePath);	
+	foreach ($classes as $key => $value) {
+		//根目录生成
+		$path = $basePath.$value;
+		createPropertyFiles($value,$path);
+	}
+}
+//生成类的常量
+function getClassConstants(){
+	$classes = get_declared_classes();
+	$basePath = $path = dirname(__DIR__)."\\class\\";
+	createDir($basePath);	
+	foreach ($classes as $key => $value) {
+		//根目录生成
+		$path = $basePath.$value;
+		createConstantFiles($value,$path);
+	}
+}
+//生成接口的常量
+function getInterfaceConstants(){
+	$interfaces = get_declared_interfaces();
+	$basePath = $path = dirname(__DIR__)."\\interface\\";
+	createDir($basePath);	
+	foreach ($interfaces as $key => $value) {
+		//根目录生成
+		$path = $basePath.$value;
+		createConstantFiles($value,$path);
+	}
+}
+
 /*创建方法文件*/
 function createMethodFiles($value,$path){
 	createDir($path);	
@@ -157,12 +191,56 @@ function createMethodFiles($value,$path){
 	}
 }
 
+/*创建属性文件*/
+function createPropertyFiles($value,$path){
+	$ref = new ReflectionClass($value);
+	$property = $ref->getProperties();
+	$result = [];
+	if ($property) {
+		$propertyPath =  $path."\\Property\\";
+		foreach ($property as $k => $v) {
+			$name = $v->getName();
+			$result[] = $name;
+		}
+		/*创建方法目录*/
+		createDir($propertyPath);
+		/*创建方法文件*/
+		$propertyFile = $propertyPath."\\index.json";
+		propertyFile($propertyFile,$value,$result);	
+	}
+}
+
+/*创建常量文件*/
+function createConstantFiles($value,$path){
+	$ref = new ReflectionClass($value);
+	$constant = $ref->getConstants();
+	if ($constant) {
+		var_dump($value);
+		$constantPath =  $path."\\Constant\\";
+		/*创建方法目录*/
+		createDir($constantPath);
+		/*创建方法文件*/
+		$constantFile = $constantPath."\\index.json";
+		constantFile($constantFile,$value,$constant);	
+	}
+}
+
 /*创建类的方法文件*/
 function methodFile($file,$class,$method){
 	$content = ["class"=>$class,"methodName"=>$method];
 	createFile($file,json_encode($content));
 }
 
+/*创建类的属性文件*/
+function propertyFile($file,$class,$property){
+	$content = ["class"=>$class,"property"=>$property];
+	createFile($file,json_encode($content));
+}
+/*创建类的常量文件*/
+function constantFile($file,$class,$constant){
+	$content = ["class"=>$class,"constant"=>$constant];
+	createFile($file,json_encode($content));
+}
 function createDir($path){
 	if (!is_dir($path)) {
 		mkdir($path);
@@ -174,5 +252,9 @@ function createFile($file,$content){
  
 
 // getClassMethods();
-getInterfaceMethods();
+// getInterfaceMethods();
+// getClassPropertys();
+// getClassConstants();
+getInterfaceConstants();
+
  ?>

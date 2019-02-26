@@ -1,0 +1,1 @@
+{"class":"mysqli","property":["affected_rows","client_info","client_version","connect_errno","connect_error","errno","error","error_list","field_count","host_info","info","insert_id","server_info","server_version","stat","sqlstate","protocol_version","thread_id","warning_count"]}
