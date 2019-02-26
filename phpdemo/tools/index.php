@@ -122,23 +122,40 @@ function getClassMethods(){
 	foreach ($classes as $key => $value) {
 		//根目录生成
 		$path = $basePath.$value;
-		createDir($path);	
-		$methods = get_class_methods($value);
-		if ($methods) {
-			$methodPath = $path."\\Methods\\";
-			createDir($methodPath);	
-			foreach ($methods as $mk => $mv) {
-				$methodDir = $methodPath.$mv;
-				/*创建方法目录*/
-				createDir($methodDir);
-				/*创建方法文件*/
-				$methodFile = $methodDir."\\index.json";
-				methodFile($methodFile,$value,$mv);	
-			}
-		}
+		createMethodFiles($value,$path);
 	}
 }
 
+
+//生成接口的函数
+function getInterfaceMethods(){
+	$interfaces = get_declared_interfaces();
+	$basePath = $path = dirname(__DIR__)."\\interface\\";
+	createDir($basePath);
+	foreach ($interfaces as $key => $value) {
+		//根目录生成
+		$path = $basePath.$value;
+		createMethodFiles($value,$path);
+	}
+}
+
+/*创建方法文件*/
+function createMethodFiles($value,$path){
+	createDir($path);	
+	$methods = get_class_methods($value);
+	if ($methods) {
+		$methodPath = $path."\\Methods\\";
+		createDir($methodPath);	
+		foreach ($methods as $mk => $mv) {
+			$methodDir = $methodPath.$mv;
+			/*创建方法目录*/
+			createDir($methodDir);
+			/*创建方法文件*/
+			$methodFile = $methodDir."\\index.json";
+			methodFile($methodFile,$value,$mv);	
+		}
+	}
+}
 
 /*创建类的方法文件*/
 function methodFile($file,$class,$method){
@@ -156,6 +173,6 @@ function createFile($file,$content){
 }
  
 
- getClassMethods();
-
+// getClassMethods();
+getInterfaceMethods();
  ?>
