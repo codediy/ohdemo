@@ -1,5 +1,96 @@
-
-		{
-			"classname": "ReflectionClassConstant",
-		}
-		
+{
+  "name" : "ReflectionClassConstant",
+  "detail": "类的常量反射类",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": ["Reflector"],
+  "constants": [""],
+  "properties": [
+	  {
+	      "name": "$name",
+	      "detail": "常量名称"
+	  },
+	  {
+	      "name": "$class",
+	      "detail": "常量所在的类"
+	  }
+  ],
+  "methods": [
+      {
+        "name": "__construct",
+        "fun": "public __construct(mixed $class,string $name)",
+        "accessModifier": ["public"],
+        "detail": "创建常量反射对象"
+      },
+      {
+          "name": "export",
+          "fun": "public static export(mixed $class,string $name,[,bool $return]):string",
+          "accessModifier": ["public","static"],
+          "level": "object",
+          "detail": "导出常量反射的字符串表示"
+      },
+      {
+          "name": "getDeclaringClass",
+          "fun": "public getDeclaringClass(void):ReflectionClass",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取常量所在类的反射"
+      },
+      {
+          "name": "getDocComment",
+          "fun": "public getDocComment(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取常量的注释文本"
+      },
+      {
+          "name": "getModifiers",
+          "fun": "public getModifiers(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取常量的修饰符的常量表示"
+      },
+      {
+          "name": "getName",
+          "fun": "public getName(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取常量的名称"
+      },
+      {
+          "name": "getValue",
+          "fun": "public getValue(void):mixed",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取常量的值"
+      },
+      {
+          "name": "isPrivate",
+          "fun": "public isPrivate(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测常量是否Private"
+      },
+      {
+          "name": "isProtected",
+          "fun": "public isProtected(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测常量是否Protected"
+      },
+      {
+          "name": "isPublic",
+          "fun": "public isPublic(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测常量是否Public"
+      },
+      {
+          "name": "__toString",
+          "fun": "public __toString(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "输出常量的字符串表示"
+      }
+  ]
+}

@@ -1,5 +1,75 @@
-
-		{
-			"classname": "ReflectionProperty",
-		}
-		
+{
+  "name" : "ReflectionProperty",
+  "detail": "类的属性反射类",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": ["Reflector"],
+  "constants": [
+	  {
+		  "name": "IS_STATIC",
+		  "detail": "是否Static属性",
+		  "value": "1"
+	  },
+	  {
+	      "name": "IS_PUBLIC",
+	      "detail": "是否Public属性",
+	      "value": "256"
+	  },
+	  {
+	      "name": "IS_PROTECTED",
+	      "detail": "是否Protected属性",
+	      "value": "512"
+	  },
+	  {
+	      "name": "IS_PRIVATE",
+	      "detail": "是否Private属性",
+	      "value": "1024"
+	  }
+  ],
+  "properties": [
+	  {
+	      "name": "$name",
+	      "detail": "属性的名称"
+	  },
+	  {
+	      "name": "$class",
+	      "detail": "属性所在的类"
+	  }
+  ],
+  "methods": [
+      {
+        "name": "__clone",
+        "fun": "final private __clone(void):void",
+        "accessModifier": ["final","private"],
+        "detail": "复制类的属性的反射对象"
+      },
+      {
+          "name": "__construct",
+          "fun": "public __construct(mixed $class,string $name)",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "创建属性的反射对象"
+      },
+      {
+          "name": "export",
+          "fun": "public static export(mixed $class,string $name [,bool $return]):string",
+          "accessModifier": ["public","static"],
+          "level": "object",
+          "detail": "导出属性的反射字符串表示"
+      },
+      {
+          "name": "getDeclaringClass",
+          "fun": "public getDeclaringClass(void):ReflectionClass",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取属性所在类的反射对象"
+      },
+      {
+          "name": "getDocComment",
+          "fun": "public getDocComment(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": ""
+      }
+  ]
+}
