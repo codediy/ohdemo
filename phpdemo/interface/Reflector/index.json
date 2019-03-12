@@ -1,5 +1,26 @@
-
-		{
-			"interfacename": "Reflector",
-		}
+{
+  "name" : "Reflector",
+  "detail": "反射类基础接口",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+		  "name": "export",
+		  "fun": "public static export(Reflector $reflector[,bool $return = false]):string",
+		  "accessModifier": ["public","static"],
+		  "level": "class",
+		  "detail": "输出反射类的字符串表示"
+      },
+      {
+		   "name": "__toString",
+           "fun": "public __toString(void) string",
+           "accessModifier": ["public"],
+		   "level": "object",
+           "detail": "输出当前反射类对象的字符串表示"
+      }
+  ]
+}
 		

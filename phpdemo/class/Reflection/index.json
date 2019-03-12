@@ -1,5 +1,25 @@
-
-		{
-			"classname": "Reflection",
-		}
-		
+{
+	"name" : "Reflection",
+	"detail": "反射类",
+	"modifier": [],
+	"extends" : [],
+	"implements": [],
+	"constants": [],
+	"properties": [],
+	"methods": [
+	  {
+		  "name": "export",
+		  "fun": "public static export(Reflector $reflector,[,bool $return = false]):string",
+		  "accessModifier": ["public","static"],
+		  "level": "class",
+		  "detail": "反射类的字符串表示"
+	  },
+	  {
+		  "name": "getModifierNames",
+		  "fun": "public static getModifierNames(int $modifiers):array",
+		  "accessModifier": ["public","static"],
+		  "level": "class",
+		  "detail": "获取反射类的修饰符数组"
+	  }
+	]
+}	

@@ -1,5 +1,397 @@
+{
+  "name" : "ReflectionClass",
+  "detail": "类的反射信息",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": ["Reflector"],
+  "constants": [
+	  {
+		  "name": "IS_IMPLICIT_ABSTRACT",
+		  "detail": "当前类是一个包含抽象方法的抽象类",
+		  "value": 16
+	  },
+	  {
+		  "name": "IS_EXPLICIT_ABSTRACT",
+		  "detail": "当前类是一个包含abstract修饰符的抽象类",
+		  "value": 32
+	  },
+	  {
+		  "name": "IS_FINAL",
+		  "detail": "当前类是一个包含final修饰符的抽象类",
+		  "value": 64
+	  }
+  ],
+  "properties": [
+	  {
+		  "name": "$name",
+		  "detail": "类的名称。只读属性，不可以赋值。"
+	  }
+  ],
+  "methods": [
+      {
+          "name": "__construct",
+          "fun": "public __construct(mixed $argument)",
+          "accessModifier": ["public"],
+	      "level": "class",
+          "detail": "初始化ReflectionClass对象"
+      },
+      {
+          "name": "export",
+          "fun": "public static export(mixed $argument,[,bool $return =false]):string",
+          "accessModifier": ["public","static"],
+          "level": "object",
+          "detail": ""
+      },
+      {
+          "name": "getConstant",
+          "fun": "public getConstant(string $name):mixed",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类定义的一个常量"
+      },
+      {
+          "name": "getConstants",
+          "fun": "public getConstants(void):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类定义的所有常量"
+      },
+      {
+          "name": "getConstructor",
+          "fun": "public getConstructor(void):ReflectionMethod",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的构造函数"
+      },
+      {
+          "name": "getDefaultProperties",
+          "fun": "public getDefaultProperties(void):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的默认属性"
+      },
+      {
+          "name": "getDocComment",
+          "fun": "public getDocComment(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的注释文档"
+      },
+      {
+          "name": "getEndLine",
+          "fun": "public getEndLine(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类最后一行的行数"
+      },
+      {
+          "name": "getExtension",
+          "fun": "public getExtension(void):ReflectionExtension",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类所在扩展的反射对象"
+      },
+      {
+          "name": "getExtensionName",
+          "fun": "public getExtensionName(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类所在扩展的名称"
+      },
+      {
+          "name": "getFileName",
+          "fun": "public getFileName(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类所在文件的名称"
+      },
+      {
+          "name": "getInterfaceNames",
+          "fun": "public getInterfaceNames(void):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类实现的所有接口名称"
+      },
+      {
+          "name": "getInterfaces",
+          "fun": "public getInterfaces(void):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类实现的所有接口的反射对象"
+      },
+      {
+          "name": "getMethod",
+          "fun": "public getMethod(string $name):ReflectionMethod",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的一个方法的反射对象"
+      },
+      {
+          "name": "getMethods",
+          "fun": "public getMethods([int $filter]):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类所有定义的方法的反射对象数组"
+      },
+      {
+          "name": "getModifiers",
+          "fun": "public getModifiers(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的修饰符的常量表示"
+      },
+      {
+          "name": "getName",
+          "fun": "public getName(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的完整名称"
+      },
+      {
+          "name": "getNamespaceName",
+          "fun": "public getNamespaceName(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的命名空间的名称"
+      },
+      {
+          "name": "getParentClass",
+          "fun": "public getParentClass(void):ReflectionClass",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的父类的反射对象"
+      },
+      {
+          "name": "getProperties",
+          "fun": "public getProperties([int $filter]):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的所有属性的反射对象"
+      },
+      {
+          "name": "getProperty",
+          "fun": "public getProperty(string $name):ReflectionProperty",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取特定属性的反射对象"
+      },
+      {
+          "name": "getReflectionConstant",
+          "fun": "public getReflectionConstant(string $name):RflectionClassConstant",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取特定常量的反射对象"
+      },
+      {
+          "name": "getReflectionConstants",
+          "fun": "public getReflectionConstants(void):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的所有常量的反射对象"
+      },
+      {
+          "name": "getShortName",
+          "fun": "public getShortName(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的简单名称"
+      },
+      {
+          "name": "getStartLine",
+          "fun": "public getStartLine(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的开始行"
+      },
+      {
+          "name": "getStaticProperties",
+          "fun": "public getStaticProperties(void):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的静态属性的反射对象"
+      },
+      {
+          "name": "getStaticPropertyValue",
+          "fun": "public getStaticPropertyValue(string $name,[,mixed &def_value]):mixed",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的静态属性的值"
+      },
+      {
+          "name": "getTraitAliases",
+          "fun": "public getTraitAlases(void):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的Trait的别名的数组"
+      },
+      {
+          "name": "getTraitNames",
+          "fun": "public getTraitNames(void):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的Trait的名称的数组"
+      },
+      {
+          "name": "getTraits",
+          "fun": "public getTraits(void):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取类的Trait的数组"
+      },
+      {
+          "name": "hasConstant",
+          "fun": "public hasConstant(string $name):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测类是否包含某个常量"
+      },
+      {
+          "name": "hasMethod",
+          "fun": "public hasMethod(string $name):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测类是否包含某个方法"
+      },
+      {
+          "name": "hasProperty",
+          "fun": "public hasProperty(string $name):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测类是否包含某个属性"
+      },
+      {
+          "name": "implementsInterface",
+          "fun": "public implementsInterface(string $interface):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测类是否实现某个接口"
+      },
+      {
+          "name": "inNamespace",
+          "fun": "public inNamespace(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测类是否在命名空间中"
+      },
+      {
+          "name": "isAbstract",
+          "fun": "public isAbstract(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测是否是一个抽象类"
+      },
+      {
+          "name": "isAnonymous",
+          "fun": "public isAnonymous(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测是否是一个匿名类"
+      },
+      {
+          "name": "isCloneable",
+          "fun": "public isCloneable(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测是否是一个可以复制的类"
+      },
+      {
+          "name": "isFinal",
+          "fun": "public isFinal(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测类是否一个Final类"
+      },
+      {
+          "name": "isInstance",
+          "fun": "public isInstance(object $object):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测对象是否是类的实例"
+      },
+      {
+          "name": "isInstantiable",
+          "fun": "public isInstantiable(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测类是否可以实例化"
+      },
+      {
+          "name": "isInterface",
+          "fun": "public isInterface(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测类是否是一个接口"
+      },
+      {
+          "name": "isInternal",
+          "fun": "public isInternal(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测类是否是一个核心户或扩展定义的内部类"
+      },
+      {
+          "name": "isIterable",
+          "fun": "public isIterable(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测类是否可以被foreach迭代遍历"
+      },
+      {
+          "name": "isSubclassOf",
+          "fun": "public isSubclassOf(string $class):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测一个类是否为指定类的子类"
+      },
+      {
+          "name": "isTrait",
+          "fun": "public isTrait(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测是否一个Trait"
+      },
+      {
+          "name": "isUserDefined",
+          "fun": "public isUserDefined(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测是否用户定义的类"
+      },
+      {
+          "name": "newInstance",
+          "fun": "public newInstance(mixed $args,[,mixed $...]):object",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "创建类的实例"
+      },
+      {
+          "name": "newInstanceArgs",
+          "fun": "public newInstanceArgs([array $args])",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "创建类的实例"
+      },
+      {
+          "name": "newInstanceWithoutConstructor",
+          "fun": "public newInstanceWithoutConstructor(void):object",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "创建类的实例"
+      },
+      {
+          "name": "setStaticPropertyValue",
+          "fun": "public setStaticPropertyValue(string $name,string $value):void",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "设置类静态属性的值"
+      },
+      {
+          "name": "__toString",
+          "fun": "public __toString(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "自定义反射的字符串表示"
+      }
 
-		{
-			"classname": "ReflectionClass",
-		}
-		
+  ]
+}

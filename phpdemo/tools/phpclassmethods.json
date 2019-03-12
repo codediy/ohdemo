@@ -1,7 +1,8 @@
 ,
 {
-"name": "$name$",
-"fun": "$fun$",
-"accessModifier": "$access$",
-"detail": "$detail$"
+    "name": "$name$",
+    "fun": "$fun$",
+    "accessModifier": "$access$",
+    "level": "object",
+    "detail": "$detail$"
 }

@@ -1,9 +1,24 @@
 {
   "name" : "$name$",
   "detail": "$detail$",
+  "modifier": ["$modifier$"],
   "extends" : ["$extends$"],
   "implements": ["$implements$"],
-  "constants": ["$constants$"],
+  "constants": [
+      {
+        "name": "$name$",
+        "detail": "$detail$",
+        "value": "$value$"
+      }
+  ],
   "properties": ["$properties$"],
-  "methods": ["$methods$"]
+  "methods": [
+      {
+          "name": "$name$",
+          "fun": "$fun$",
+          "accessModifier": "$access$",
+          "level": "$level$",
+          "detail": "$detail$"
+      }
+  ]
 }
