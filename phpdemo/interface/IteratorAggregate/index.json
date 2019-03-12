@@ -1,5 +1,17 @@
-
+{
+	"name" : "IteratorAggregate",
+	"detail": "聚合式迭代器接口 生成迭代器",
+	"extends" : ["Traversable"],
+	"implements": [],
+	"constants": [],
+	"properties": [],
+	"methods": [
 		{
-			"interfacename": "IteratorAggregate",
+			"name": "getIterator",
+			"fun": "abstract public getIterator(void):Traversable",
+			"accessModifier": "abstract public",
+			"detail": "生成迭代器"
 		}
+	]
+}
 		

@@ -1,0 +1,9 @@
+{
+  "name" : "$name$",
+  "detail": "$detail$",
+  "extends" : ["$extends$"],
+  "implements": ["$implements$"],
+  "constants": ["$constants$"],
+  "properties": ["$properties$"],
+  "methods": ["$methods$"]
+}

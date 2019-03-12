@@ -1,5 +1,10 @@
-
-		{
-			"interfacename": "Traversable",
-		}
+{
+	"name" : "Traversable",
+	"detail": "可以使用foreach遍历的类的基础接口",
+	"extends" : [],
+	"implements": [],
+	"constants": [],
+	"properties": [],
+	"methods": []
+}
 		

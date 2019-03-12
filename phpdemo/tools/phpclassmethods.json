@@ -1,0 +1,7 @@
+,
+{
+"name": "$name$",
+"fun": "$fun$",
+"accessModifier": "$access$",
+"detail": "$detail$"
+}
