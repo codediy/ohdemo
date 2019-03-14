@@ -1,5 +1,32 @@
-
-			{
-				"functionname": "imageaffinematrixget",
-			}
-			
+{
+  "name": "imageaffinematrixget",
+  "dep":[
+    "PHP5 >= 5.5.0",
+    "PHP7"
+  ],
+  "fun": "imageaffinematrixget(int $type,[,mixed $options]):array",
+  "detail" :"获取一个变换矩阵",
+  "param": [
+    {
+      "name": "$type",
+      "type": "int",
+      "detail" : "变换类型IMG_AFFINE_XX的常量",
+      "must": true
+    },
+    {
+      "name": "$options",
+      "type": "mixed",
+      "detail" : "变换类型的辅助信息",
+      "must": false
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回仿射变换矩阵的数组形式"
+    }
+  ],
+  "info": [
+  ]
+}
