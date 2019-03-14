@@ -1,5 +1,35 @@
-
-			{
-				"functionname": "imageantialias",
-			}
-			
+{
+  "name": "imageantialias",
+  "dep":[
+    "PHP4 >= 4.3.2",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": " imageantialias($resource $image,bool $enabled ):bool",
+  "detail" :"是否开启抗锯齿",
+  "param": [
+    {
+      "name": "$image",
+      "type": "resource",
+      "detail" : "待处理的图像资源",
+      "must": true
+    },
+    {
+      "name": "$enabled",
+      "type": "bool",
+      "detail" : "是否开启抗锯齿",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "bool",
+      "detail": "设置的结果"
+    }
+  ],
+  "info": [
+    "",
+    ""
+  ]
+}
