@@ -1,5 +1,59 @@
-
-			{
-				"functionname": "imagechar",
-			}
-			
+{
+  "name": "imagechar",
+  "dep":[
+    "PHP4",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": " imagechar(resource $image,int $font,int $x,int $y,string $c,int $color):bool",
+  "detail" :"水平的画一个字符",
+  "param": [
+    {
+      "name": "$image",
+      "type": "resource",
+      "detail" : "绘画的背景图像",
+      "must": true
+    },
+    {
+      "name": "$font",
+      "type": "int",
+      "detail" : "字体类型 1到5为内置字体",
+      "must": true
+    },
+    {
+      "name": "$x",
+      "type": "int",
+      "detail" : "左上角x坐标",
+      "must": true
+    },
+    {
+      "name": "$y",
+      "type": "int",
+      "detail" : "左上角y坐标",
+      "must": true
+    },
+    {
+      "name": "$c",
+      "type": "string",
+      "detail" : "待绘画的字符",
+      "must": true
+    },
+    {
+      "name": "$color",
+      "type": "int",
+      "detail" : "使用的颜色",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "",
+      "type": "",
+      "detail": ""
+    }
+  ],
+  "info": [
+    "",
+    ""
+  ]
+}
