@@ -1,5 +1,117 @@
-
-		{
-			"classname": "SplDoublyLinkedList",
-		}
+{
+  "name" : "SplDoublyLinkedList",
+  "detail": "Spl双向链表",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": ["Iterator","ArrayAccess","Countable"],
+  "constants": [
+	  {
+      	  "name": "IT_MODE_LIFO",
+		  "detail": "遍历模式 Stack模式",
+		  "value": "2"
+	  },
+	  {
+	      "name": "IT_MODE_FIFO",
+	      "detail": "遍历模式 Queue模式",
+	      "value": "0"
+	  },
+	  {
+	      "name": "IT_MODE_DELETE",
+	      "detail": "遍历后的操作 删除元素",
+	      "value": "1"
+	  },
+	  {
+	      "name": "IT_MODE_KEEP",
+	      "detail": "遍历后的操作 保留元素",
+	      "value": "0"
+	  }
+  ],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "__construct()",
+          "fun": "public _construct(void)",
+          "accessModifier": ["public"],
+          "level":"object",
+          "detail": "Spl双向链表的构造函数"
+      },
+      {
+          "name": "add",
+          "fun": "public add(mixed $index,mixed $newval):void",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "添加元素到指定索引"
+      },
+      {
+          "name": "bottom",
+          "fun": "public bottom(void):mixed",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "返回列表的第一个元素"
+      },
+      {
+          "name": "count",
+          "fun": "public count(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "统计元素的个数"
+      },
+      {
+          "name": "current",
+          "fun": "public current(void):mixed",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "返回当前元素的值"
+      },
+      {
+          "name": "getIteratorMode",
+          "fun": "public getIteratorMode(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取遍历模式"
+      },
+      {
+          "name": "isEmpty",
+          "fun": "public isEmpty(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测集合是否为空"
+      },
+      {
+          "name": "key",
+          "fun": "public key(void):mixed",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "返回当前元素的键"
+      },
+      {
+          "name": "next",
+          "fun": "public next(void):void",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "将索引前移"
+      },
+      {
+          "name": "offsetExists",
+          "fun": "public offsetExists(mixed $index):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测指定索引是否存在"
+      },
+      {
+          "name": "offsetGet",
+          "fun": "public offsetGet(mixed $index):mixed",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取指定索引的值"
+      },
+      {
+          "name": "offsetSet",
+          "fun": "public offsetSet(mixed $index,mixed $newval):void",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "设置指定索引的值"
+      }
+  ]
+}
 		

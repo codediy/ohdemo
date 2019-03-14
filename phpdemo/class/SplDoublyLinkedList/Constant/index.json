@@ -1,1 +1,9 @@
-{"class":"SplDoublyLinkedList","constant":{"IT_MODE_LIFO":2,"IT_MODE_FIFO":0,"IT_MODE_DELETE":1,"IT_MODE_KEEP":0}}
+{
+  "class": "SplDoublyLinkedList",
+  "constant": {
+    "IT_MODE_LIFO": 2,
+    "IT_MODE_FIFO": 0,
+    "IT_MODE_DELETE": 1,
+    "IT_MODE_KEEP": 0
+  }
+}
