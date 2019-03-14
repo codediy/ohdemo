@@ -1,5 +1,39 @@
-
-			{
-				"functionname": "imagebmp",
-			}
-			
+{
+  "name": "imagebmp",
+  "dep":[
+    "PHP7 >= 7.2.0"
+  ],
+  "fun": " imagebmp(resource $image [,mixed $to = NULL [,bool $compressed = TRUE]] ):bool",
+  "detail" :"输出BMP图片",
+  "param": [
+    {
+      "name": "$image",
+      "type": "resource",
+      "detail" : "待处理的图像资源",
+      "must": true
+    },
+    {
+      "name": "$to",
+      "type": "mixed",
+      "detail" : "保存的文件的路径",
+      "must": false
+    },
+    {
+      "name": "$compressed",
+      "type": "bool",
+      "detail" : "是否压缩图片",
+      "must": false
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "bool",
+      "detail": "输出是否成功"
+    }
+  ],
+  "info": [
+    "",
+    ""
+  ]
+}
