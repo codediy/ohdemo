@@ -1,5 +1,28 @@
-
-			{
-				"functionname": "image_type_to_mime_type",
-			}
-			
+{
+  "name": "image_type_to_mime_type",
+  "dep":[
+    "PHP4 >= 4.3.0",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": " image_type_to_mime_type(int $imagetype):string",
+  "detail" :"获取图像类型的MIME的字符串表示",
+  "param": [
+    {
+      "name": "$imagetype",
+      "type": "int",
+      "detail" : "图像类型的常量表示",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "string",
+      "detail": "图像的MIME类型的字符串表示"
+    }
+  ],
+  "info": [
+    "此函数不需要GD库"
+  ]
+}

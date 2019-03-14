@@ -1,5 +1,33 @@
-
-			{
-				"functionname": "image_type_to_extension",
-			}
-			
+{
+  "name": "image_type_to_extension",
+  "dep":[
+    "PHP5 > 5.2.0",
+    "PHP7"
+  ],
+  "fun": "image_type_to_extension(int $imagetype,[,bool $include_dot = TRUE ):string",
+  "detail" :"获取图像类型常量的IMAGETYPE_XXX的后缀字符串表示",
+  "param": [
+    {
+      "name": "$imagetype",
+      "type": "int",
+      "detail" : "图像类型的常量表示",
+      "must": true
+    },
+    {
+      "name": "$include_dot",
+      "type": "bool",
+      "detail" : "返回数据是否包含点",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "string",
+      "detail": "返回图像类型的后缀字符串表示"
+    }
+  ],
+  "info": [
+    "此函数不需要GD库",
+  ]
+}
