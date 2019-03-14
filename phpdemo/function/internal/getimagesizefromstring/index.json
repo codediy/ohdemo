@@ -1,5 +1,34 @@
-
-			{
-				"functionname": "getimagesizefromstring",
-			}
-			
+{
+  "name": "getimagesizefromstring",
+  "dep":[
+    "PHP5 >= 5.4.0",
+    "PHP7"
+  ],
+  "fun": " getimagesizefromstring($string $imagedata,[,array &$imageinfo):array",
+  "detail" :"获取字符串图像的图像信息",
+  "param": [
+    {
+      "name": "$imagedata",
+      "type": "string",
+      "detail" : "图像的字符串",
+      "must": true
+    },
+    {
+      "name": "$imageinfo",
+      "type": "array &",
+      "detail" : "图像的扩展信息",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "返回数据与getimagesize()函数相同"
+    }
+  ],
+  "info": [
+    "getimagesizefromstring() 从图像的字符串表示中获取图像信息",
+    "getimagesize() 从图像的文件格式中获取图像信息"
+  ]
+}
