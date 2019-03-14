@@ -6,7 +6,7 @@
     "PHP7"
   ],
   "fun": " imagealphablending(resource $image,bool $blendmode ):bool",
-  "detail" :"设置图像上的绘画模式",
+  "detail" :"是否开启alpha的混合模式",
   "param": [
     {
       "name": "$image",
