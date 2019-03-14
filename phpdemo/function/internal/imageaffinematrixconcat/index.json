@@ -1,5 +1,33 @@
-
-			{
-				"functionname": "imageaffinematrixconcat",
-			}
-			
+{
+  "name": "imageaffinematrixconcat",
+  "dep":[
+    "PHP5 >= 5.5.0",
+    "PHP7"
+  ],
+  "fun": " imageaffinematrixconcat(array $m1,array $m2):array",
+  "detail" :"合并两个仿射变换矩阵",
+  "param": [
+    {
+      "name": "$m1",
+      "type": "array",
+      "detail" : "待合并的矩阵1",
+      "must": true
+    },
+    {
+      "name": "$m2",
+      "type": "array",
+      "detail" : "待合并的矩阵2",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "合并后的矩阵"
+    }
+  ],
+  "info": [
+    "用来生成复杂的变换矩阵"
+  ]
+}
