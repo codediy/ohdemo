@@ -1,5 +1,39 @@
-
-			{
-				"functionname": "getimagesize",
-			}
-			
+{
+  "name": "getimagesize",
+  "dep":[
+    "PHP4",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "getimagesize(string $filename [,array &imageinfo]):array",
+  "detail" :"获取图像的大小和文件类型的信息",
+  "param": [
+    {
+      "name": "$filename",
+      "type": "string",
+      "detail" : "图像的文件",
+      "must": true
+    },
+    {
+      "name": "$imageinfo",
+      "type": "array &",
+      "detail" : "获取图像的一些扩展信息",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "图像信息的数组表示"
+    }
+  ],
+  "info": [
+	  "$filename支持url",
+      "$return[0] 图像的宽度",
+	  "$return[1] 图像的高度",
+	  "$return[2] 图像的类型标记 对应 IMAGETYPE常量",
+	  "$return[3] height=yy width=xx的字符串",
+	  "$return['mime'] 图像的MIME类型"
+  ]
+}
