@@ -1,5 +1,19 @@
-
-		{
-			"interfacename": "Countable",
-		}
+{
+  "name" : "Countable",
+  "detail": "支持count()函数的类",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "count",
+          "fun": "abstract public count(void):int",
+          "accessModifier": ["abstract","public"],
+          "level":"object",
+          "detail": "统计对象的元素个数"
+      }
+  ]
+}
 		

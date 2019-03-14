@@ -1,5 +1,39 @@
-
-		{
-			"interfacename": "ArrayAccess",
-		}
-		
+{
+  "name" : "ArrayAccess",
+  "detail": "数组式访问接口",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+        "name": "offsetExists",
+        "fun": "abstract public offsetExists(mixed $offset):boolean",
+        "accessModifier": ["abstract","public"],
+	    "level": "object",
+        "detail": "检测指定索引是否存在isset()"
+      },
+      {
+          "name": "offsetGet",
+          "fun": "abstract public offsetGet(mixed $offset):mixed",
+          "accessModifier": ["abstract","public"],
+          "level": "object",
+          "detail": "获取指定索引的值"
+      },
+      {
+          "name": "offsetSet",
+          "fun": "abstract public offsetSet(mixed $offset):void",
+          "accessModifier": ["abstract","public"],
+          "level": "object",
+          "detail": "设置指定索引的值"
+      },
+      {
+          "name": "offsetUnset",
+          "fun": "abstract public offsetUnset(mixed $offset):void",
+          "accessModifier": ["abstract","public"],
+          "level": "object",
+          "detail": "删除指定索引的值"
+      }
+  ]
+}
