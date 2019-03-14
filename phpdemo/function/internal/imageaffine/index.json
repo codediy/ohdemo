@@ -1,5 +1,40 @@
-
-			{
-				"functionname": "imageaffine",
-			}
-			
+{
+  "name": "imageaffine",
+  "dep":[
+    "PHP5 >= 5.5.0",
+    "PHP7"
+  ],
+  "fun": " imageaffine(resource $image,array $affine [,array $clip] ):resource",
+  "detail" :"将图像$image按照$affine中的仿射矩阵进行变换",
+  "param": [
+    {
+      "name": "$image",
+      "type": "resource",
+      "detail" : "待处理的图像资源",
+      "must": true
+    },
+    {
+      "name": "$affine",
+      "type": "array",
+      "detail" : "仿射变换矩阵的数组表示",
+      "must": true
+    },
+    {
+      "name": "$clip",
+      "type": "array",
+      "detail" : "裁剪区域的数组表示",
+      "must": false
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "resource",
+      "detail": "返回变换后的图像"
+    }
+  ],
+  "info": [
+    "",
+    ""
+  ]
+}
