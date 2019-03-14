@@ -1,5 +1,41 @@
-
-			{
-				"functionname": "image2wbmp",
-			}
-			
+{
+  "name": "image2wbmp",
+  "dep":[
+    "PHP4 >= 4.0.5",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "image2wbmp(resource $image [,string $filename [,int $threshold]]):int",
+  "detail" :"从$image图像创建一个名为$filename的WBMP文件",
+  "param": [
+    {
+      "name": "$image",
+      "type": "resource",
+      "detail" : "图像的资源表示",
+      "must": true
+    },
+    {
+      "name": "$filename",
+      "type": "string",
+      "detail" : "创建的文件名",
+      "must": false
+    },
+    {
+      "name": "$threshold",
+      "type": "int",
+      "detail" : "",
+      "must": false
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "int",
+      "detail": ""
+    }
+  ],
+  "info": [
+    "",
+    ""
+  ]
+}
