@@ -1,5 +1,30 @@
-
-			{
-				"functionname": "gd_info",
-			}
-			
+{
+  "name": "gd_info",
+  "dep":[
+    "PHP4 >= 4.3.0",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": "gd_info(void):array",
+  "detail" :"获取当前安装的GD库的版本和功能信息",
+  "param": [],
+  "return": [
+    {
+      "name": "$return",
+      "type": "array",
+      "detail": "GD库的版本和功能信息"
+    }
+  ],
+  "info": [
+    "GD VERSION libgd的版本",
+    "Freetype Support:Freetype是否支持",
+    "Freetype Linkage:Freetype连接的方法",
+    "T1Lib Support:T1Lib是否支持",
+    "GIF Read Support:是否支持读取gif图像",
+    "GIF Create Support:是否支持创建gif图像",
+    "JPG Support:是否支持创建jpg图像处理",
+    "PNG Support:是否支持创建png图像处理",
+    "WBMP Support:是否支持创建WBMP处理",
+    "XBM Support:是否支持创建XBM处理"
+  ]
+}
