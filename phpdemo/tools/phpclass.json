@@ -17,7 +17,7 @@
           "name": "$name$",
           "fun": "$fun$",
           "accessModifier": "$access$",
-          "level": "$level$",
+          "level": "object",
           "detail": "$detail$"
       }
   ]
