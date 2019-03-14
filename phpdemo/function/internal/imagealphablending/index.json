@@ -1,5 +1,36 @@
-
-			{
-				"functionname": "imagealphablending",
-			}
+{
+  "name": "imagealphablending",
+  "dep":[
+    "PHP4 >= 4.0.6",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": " imagealphablending(resource $image,bool $blendmode ):bool",
+  "detail" :"设置图像上的绘画模式",
+  "param": [
+    {
+      "name": "$image",
+      "type": "resource",
+      "detail" : "待处理的图像资源",
+      "must": true
+    },
+    {
+      "name": "$blendmode",
+      "type": "bool",
+      "detail" : "是否开启混色模式",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "bool",
+      "detail": "启用或关闭混色模式是否成功"
+    }
+  ],
+  "info": [
+    "",
+    ""
+  ]
+}
 			
