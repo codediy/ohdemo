@@ -1,5 +1,69 @@
-
-			{
-				"functionname": "imagearc",
-			}
-			
+{
+  "name": "imagearc",
+  "dep":[
+    "PHP4",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": " imagearc(resource $image,int $cx,int $cy,int $w,int $h,int $s,int $e,int $color):bool",
+  "detail" :"绘制圆弧",
+  "param": [
+    {
+      "name": "$image",
+      "type": "resource",
+      "detail" : "绘制的背景图片",
+      "must": true
+    },
+    {
+      "name": "$cx",
+      "type": "int",
+      "detail" : "图像左上角x坐标",
+      "must": true
+    },
+    {
+      "name": "$cy",
+      "type": "int",
+      "detail" : "图像左上角y坐标",
+      "must": true
+    },
+    {
+      "name": "$w",
+      "type": "int",
+      "detail" : "圆的宽度",
+      "must": true
+    },
+    {
+      "name": "$h",
+      "type": "int",
+      "detail" : "圆的高度",
+      "must": true
+    },
+    {
+      "name": "$s",
+      "type": "int",
+      "detail" : "开始点的与水平距离的角度",
+      "must": true
+    },
+    {
+      "name": "$e",
+      "type": "int",
+      "detail" : "结束点与水平距离的角度",
+      "must": true
+    },
+    {
+      "name": "$color",
+      "type": "int ",
+      "detail" : "绘制的颜色",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "bool",
+      "detail": "是否绘制成功"
+    }
+  ],
+  "info": [
+  ]
+}
