@@ -1,5 +1,46 @@
-
-			{
-				"functionname": "imagecolorallocate",
-			}
-			
+{
+  "name": "imagecolorallocate",
+  "dep": [
+    "PHP4 >= ",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": " imagecolorallocate(resource $image, int $red,int $green,int $blue ):int",
+  "detail": "返回RGB成分组成颜色的int表示",
+  "param": [
+    {
+      "name": "$image",
+      "type": "resource",
+      "detail": "待处理的背景图像",
+      "must": true
+    },
+    {
+      "name": "$red",
+      "type": "int",
+      "detail": "red分量 0~255的十六进制数字",
+      "must": true
+    },
+    {
+      "name": "$green",
+      "type": "int",
+      "detail": "green分量 0~255的十六进制数字",
+      "must": true
+    },
+    {
+      "name": "$blue",
+      "type": "int",
+      "detail": "blue分量 0~255的十六进制数字",
+      "must": true
+    }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "int",
+      "detail": "颜色的int表示"
+    }
+  ],
+  "info": [
+    "第一次调用Imagecolorallocate会给图像填充背景色"
+  ]
+}
