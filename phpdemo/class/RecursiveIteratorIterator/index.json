@@ -1,5 +1,129 @@
-
-		{
-			"classname": "RecursiveIteratorIterator",
-		}
+{
+  "name": "RecursiveIteratorIterator",
+  "detail": "可以遍历递归迭代器的迭代器",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    ""
+  ],
+  "implements": [
+    "OuterIterator"
+  ],
+  "constants": [
+    {
+      "name": "LEAVES_ONLY",
+      "detail": "",
+      "value": "0"
+    },
+    {
+      "name": "SELF_FIRST",
+      "detail": "",
+      "value": "1"
+    },
+    {
+      "name": "CHILD_FIRST",
+      "detail": "",
+      "value": "2"
+    },
+    {
+      "name": "CATCH_GET_CHILD",
+      "detail": "",
+      "value": "16"
+    }
+  ],
+  "properties": [
+    ""
+  ],
+  "methods": [
+    {
+      "name": "__construct",
+      "fun": "public __construct(Traversable $iterator[,int $mode[,$int flags]])",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "创建递归迭代器的迭代器"
+    },
+    {
+      "name": "benginIteration",
+      "fun": "public beginIteration(void):void",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "rewind()的回调函数"
+    },
+    {
+      "name": "endIteration",
+      "fun": "public endIteration(void):void",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "valid()回调函数"
+    },
+    {
+      "name": "callGetChildren",
+      "fun": "public callGetChildren(void):RecursiveIterator",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "getChildren()的回调函数"
+    },
+    {
+      "name": "callHasChildren",
+      "fun": "public callHasChildren(void):bool",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "hasChildren()的回调函数"
+    },
+    {
+      "name": "beginChildren",
+      "fun": "public beginChildren(void):void",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "子节点开始迭代时的回调"
+    },
+    {
+      "name": "endChildren",
+      "fun": "public endChildren(void):void",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "子节点结束迭代时的回调"
+    },
+    {
+      "name": "getDepth",
+      "fun": "public getDepth(void):int",
+      "accessModifier": ["public"],
+      "level": "object",
+      "detail": "返回当前递归深度"
+    },
+    {
+      "name": "setMaxDepth",
+      "fun": "public setMaxDepth([int $max]):void",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "设置递归最大深度"
+    },
+    {
+      "name": "getMaxDepth",
+      "fun": "public getMaxDepth(void):mixed",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "返回设置的递归最大深度"
+    }
+  ]
+}
 		

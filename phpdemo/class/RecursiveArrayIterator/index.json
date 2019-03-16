@@ -1,5 +1,42 @@
-
+{
+  "name" : "RecursiveArayIterator",
+  "detail": "数组递归迭代器",
+  "modifier": [""],
+  "extends" : ["ArrayIterator"],
+  "implements": ["RecursiveIterator"],
+  "constants": [
 		{
-			"classname": "RecursiveArrayIterator",
+		    "name": "STD_PROP_LIST",
+		    "detail": "",
+		    "value": "1"
+		},
+		{
+		    "name": "ARRAY_AS_PROPS",
+		    "detail": "",
+		    "value": "2"
+		},
+		{
+		    "name": "CHILD_ARRAY_ONLY",
+		    "detail": "",
+		    "value": "4"
 		}
+  ],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "getChildren",
+          "fun": "public getChildren(void):RecursiveArrayIteratolr",
+          "accessModifier": ["public"],
+          "level":"object",
+          "detail": "获取子迭代器"
+      },
+      {
+          "name": "hasChildren",
+          "fun": "public hasChildren(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测当前元素是否可以作为迭代器"
+      }
+  ]
+}
 		
