@@ -1,5 +1,40 @@
-
-		{
-			"interfacename": "RecursiveIterator",
-		}
-		
+{
+  "name" : "RecursiveIterator",
+  "detail": "",
+  "modifier": [""],
+  "extends" : ["Iterator"],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "getChildren",
+          "fun": "public getChildren(void): RecursiveIterator",
+          "accessModifier": ["public"],
+          "level":"object",
+          "detail": "获取当前的子迭代器"
+      },
+      {
+          "name": "hasChildren",
+          "fun": "public hasChildren(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "检测是否有子迭代器"
+      }
+  ]
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              迭 代     器的迭代器",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "RecursiveIterator",
+          "fun": "",
+          "accessModifier": "",
+          "level":"object",
+          "detail": ""
+      }
+  ]
+}
