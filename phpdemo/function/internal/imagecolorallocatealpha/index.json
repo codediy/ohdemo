@@ -1,5 +1,53 @@
-
-			{
-				"functionname": "imagecolorallocatealpha",
-			}
-			
+{
+  "name": "imagecolorallocatealpha",
+  "dep":[
+    "PHP4 >= 4.3.2",
+    "PHP5",
+    "PHP7"
+  ],
+  "fun": " imagecolorallocatealpha(resource $image,int $red,int $green,int $blue,int $alpah ):int",
+  "detail" :"分配带有透明度的颜色",
+  "param": [
+	  {
+		  "name": "$image",
+		  "type": "resource",
+		  "detail": "待处理的背景图像",
+		  "must": true
+	  },
+	  {
+		  "name": "$red",
+		  "type": "int",
+		  "detail": "red分量 0~255的十六进制数字",
+		  "must": true
+	  },
+	  {
+		  "name": "$green",
+		  "type": "int",
+		  "detail": "green分量 0~255的十六进制数字",
+		  "must": true
+	  },
+	  {
+		  "name": "$blue",
+		  "type": "int",
+		  "detail": "blue分量 0~255的十六进制数字",
+		  "must": true
+	  },
+	  {
+	    "name": "$alpha",
+	    "type": "int",
+	    "detail" : "alpha分量 0~127透明度 0完全不透明 127 完全透明",
+	    "must": true
+	  }
+  ],
+  "return": [
+    {
+      "name": "$return",
+      "type": "int",
+      "detail": "分配颜色的int值"
+    }
+  ],
+  "info": [
+    "",
+    ""
+  ]
+}
