@@ -1,5 +1,47 @@
-
-		{
-			"classname": "AppendIterator",
-		}
+{
+  "name" : "AppendIterator",
+  "detail": "可添加迭代器内容的迭代器",
+  "modifier": [""],
+  "extends" : ["IteratorIterator"],
+  "implements": ["OuterIterator"],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "__construct",
+          "fun": "public __construct(void)",
+          "accessModifier": ["public"],
+          "level":"object",
+          "detail": "创建对象"
+      },
+      {
+          "name": "append",
+          "fun": "public append(Iterator $iterator):void",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "添加迭代器内容到当前迭代器"
+      },
+      {
+          "name": "getArrayIterator",
+          "fun": "public getArrayIterator(void):ArrayIterator",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取内部迭代器数组"
+      },
+      {
+          "name": "getInnerIterator",
+          "fun": "public getInnerIterator(void):Iterator",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "返回当前迭代器"
+      },
+      {
+          "name": "getIteratorIndex",
+          "fun": "public getIteratorIndex(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "返回当前迭代器的索引值"
+      }
+  ]
+}
 		
