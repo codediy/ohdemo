@@ -1,5 +1,19 @@
-
-		{
-			"interfacename": "SeekableIterator",
-		}
+{
+  "name" : "SeekableIterator",
+  "detail": "",
+  "modifier": [""],
+  "extends" : ["Iterator"],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "seek",
+          "fun": "abstract public seek(int $positon):void",
+          "accessModifier": ["abstract","public"],
+          "level":"object",
+          "detail": "可以设置指定位置的迭代器"
+      }
+  ]
+}
 		

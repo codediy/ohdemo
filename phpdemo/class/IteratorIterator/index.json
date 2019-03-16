@@ -1,5 +1,25 @@
-
-		{
-			"classname": "IteratorIterator",
-		}
-		
+{
+  "name" : "IteratorIterator",
+  "detail": "可遍历数据的迭代器",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "__construct",
+          "fun": "public __construct(Traversable $iterator)",
+          "accessModifier": ["public"],
+          "level":"object",
+          "detail": "使用可遍历数据创建迭代器"
+      },
+      {
+          "name": "getInnerIterator",
+          "fun": "public getInnerIterator(void):Traversable",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取内部可遍历数据"
+      }
+  ]
+}
