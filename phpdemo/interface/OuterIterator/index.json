@@ -1,5 +1,19 @@
-
-		{
-			"interfacename": "OuterIterator",
-		}
+{
+  "name" : "OutherIterator",
+  "detail": "返回迭代器的迭代器",
+  "modifier": [""],
+  "extends" : ["Iterator"],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "getInnerIterator",
+          "fun": "public getInnerIterator(void):Iterator",
+          "accessModifier": ["public"],
+          "level":"object",
+          "detail": "返回当前的内部迭代器"
+      }
+  ]
+}
 		
