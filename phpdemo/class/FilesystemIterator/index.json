@@ -1,5 +1,90 @@
+{
+  "name": "FilesystemIterator",
+  "detail": "文件迭代器",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    "DirectoryIterator"
+  ],
+  "implements": [
+    "SeekableIterator"
+  ],
+  "constants": [
+    {
+        "name": "CURRENT_AS_FILEINFO",
+        "detail": "",
+        "value": "0"
+    },
+    {
+      "name": "CURRENT_AS_SELF",
+      "detail": "",
+      "value": "16"
+    },
+    {
+       "name": "CURRENT_AS_PATHNAME",
+       "detail": "",
+       "value": "32"
+   },
+    {
+        "name": "CURRENT_MODE_MASK",
+        "detail": "",
+        "value": "240"
+    },
+    {
+        "name": "KEY_AS_PATHNAME",
+        "detail": "",
+        "value": "0"
+    },
+    {
+        "name": "KEY_AS_FILENAME",
+        "detail": "",
+        "value": "256"
+    },
+    {
+        "name": "KEY_MODE_MASK",
+        "detail": "",
+        "value": "3840"
+    },
+    {
+        "name": "NEW_CURRENT_AND_KEY",
+        "detail": "",
+        "value": "256"
+    },
+    {
+        "name": "FOLLOW_SYMLINKS",
+        "detail": "",
+        "value": "512"
+    },
+    {
+        "name": "SKIP_DOTS",
+        "detail": "",
+        "value": "4096"
+    },
+    {
+        "name": "UNIX_PATHS",
+        "detail": "",
+        "value": "8196"
+    }
 
-		{
-			"classname": "FilesystemIterator",
-		}
+  ],
+  "properties": [
+    ""
+  ],
+  "methods": [
+    {
+      "name": "__construct",
+      "fun": "public __construct(string $path,[,int $flasg =  FilesystemIterator::KEY_AS_PATHNAME | FilesystemIterator::CURRENT_AS_FILEINFO | FilesystemIterator::SKIP_DOTS])",
+      "accessModifier": ["public"],
+      "level": "object",
+      "detail": "创建文件目录迭代器"
+    }
+  ],
+  "info": [
+    "键名默认使用PATHNAME",
+    "键值默认使用FILEINFO",
+    "键值默认忽略.和..文件",
+    "可以使用常量flags配置key与current值的格式"
+  ]
+}
 		

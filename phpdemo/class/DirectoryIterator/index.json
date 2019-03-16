@@ -1,5 +1,36 @@
-
+{
+	"name": "DirectoryIterator",
+	"detail": "目录文件内容迭代器",
+	"modifier": [
+		""
+	],
+	"extends": [
+		"SplFileInfo"
+	],
+	"implements": [
+		"SeekableIterator"
+	],
+	"constants": [
+		""
+	],
+	"properties": [
+		""
+	],
+	"methods": [
 		{
-			"classname": "DirectoryIterator",
+			"name": "__construct",
+			"fun": "public __construct(string $paht)",
+			"accessModifier": [
+				"public"
+			],
+			"level": "object",
+			"detail": "创建指定目录的内容迭代器"
 		}
+	],
+	"info": [
+		"DirectoryIterator：创建目录的内容迭代器,可以对目录里面包含的文件进行迭代遍历",
+		"每次迭代返回的也是DirectoryIterator对象",
+		"DirectoryIterator每次迭代只在本层迭代，不会进入子目录"
+	]
+}
 		

@@ -1,5 +1,18 @@
-
-		{
-			"classname": "Directory",
-		}
-		
+{
+  "name" : "Directory",
+  "detail": "dir()函数创建的目录对象",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "Directory",
+          "fun": "",
+          "accessModifier": "",
+          "level":"object",
+          "detail": "dir()函数创建的目录对象"
+      }
+  ]
+}
