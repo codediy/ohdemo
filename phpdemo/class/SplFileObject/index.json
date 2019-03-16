@@ -1,5 +1,273 @@
-
-		{
-			"classname": "SplFileObject",
-		}
+{
+  "name": "SplFileObject",
+  "detail": "文件操作的对象接口",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    "SplFileInfo"
+  ],
+  "implements": [
+    "RecursiveIterator",
+    "SeekableIterator"
+  ],
+  "constants": [
+    {
+      "name": "DROP_NEW_LINE",
+      "detail": "1",
+      "value": ""
+    },
+    {
+        "name": "READ_AHEAD",
+        "detail": "2",
+        "value": ""
+    },
+    {
+        "name": "SKIP_EMPTY",
+        "detail": "4",
+        "value": ""
+    },
+    {
+        "name": "READ_CSV",
+        "detail": "8",
+        "value": ""
+    }
+  ],
+  "properties": [
+    ""
+  ],
+  "methods": [
+    {
+      "name": "__construct",
+      "fun": "public __construct(string $filename,[,string $open_mode,[,bool $user_include_path [,resource $context]]])",
+      "accessModifier": ["public"],
+      "level": "object",
+      "detail": "SplObject对象的构造函数"
+    },
+    {
+        "name": "current",
+        "fun": "public current(void):string|array",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "返回文件当前行的内容"
+    },
+    {
+        "name": "eof",
+        "fun": "public eof(void):bool",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "检测是否达到文件末尾"
+    },
+    {
+        "name": "fflush",
+        "fun": "public fflush(void):bool",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "输出缓存到文件"
+    },
+    {
+        "name": "fgetc",
+        "fun": "public fgetc(void):string",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "获取当前字符"
+    },
+    {
+        "name": "fgetcsv",
+        "fun": "public fgetcsv([string $delimiter,[,string $enclosure[,$escape]]]):array",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "以csv格式读取文件一行 返回包含的字段内容数组"
+    },
+    {
+        "name": "fgets",
+        "fun": "public fgets(void):string",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "逐行读取文件内容"
+    },
+    {
+        "name": "fgetss",
+        "fun": "public fgetss([string $alloable_tags]):string",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "过滤HTML标签的读取文件一行"
+    },
+    {
+        "name": "flock",
+        "fun": "public flock(int $operation,[,int &$wouldblock]):bool",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "设置文件的读写执行锁"
+    },
+    {
+        "name": "fpassthru",
+        "fun": "public fpassthru(void):int",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "从当前位置读取到文件末尾"
+    },
+    {
+        "name": "fputcsv",
+        "fun": "public fputcsv(array $fields[,string $delimiter,[,string $enclosure,[,strin $escape]]]):int",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "以csv格式写入数组内容到文件"
+    },
+    {
+        "name": "fread",
+        "fun": "public fread(int $length):string",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "从文件的读取指定长度的内容"
+    },
+    {
+        "name": "fscanf",
+        "fun": "public fscanf(string $format[,mixed &$...]):mixed",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "读取文件内容到指定格式"
+    },
+    {
+        "name": "fseek",
+        "fun": "public fseek(int $offset[,int $whence = SEEK_SET]):int",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "移动读取指针到指定位置"
+    },
+    {
+        "name": "fstat",
+        "fun": "public fstat(void):array",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "读取问文件的属性信息"
+    },
+    {
+        "name": "ftell",
+        "fun": "public ftell(void):int",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "获取当前的读取位置"
+    },
+    {
+        "name": "ftruncate",
+        "fun": "public ftruncate(int $size):bool",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "裁剪文件到指定长度"
+    },
+    {
+        "name": "fwrite",
+        "fun": "public fwrite(string $str,[,int $length]):int",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "写入内容到文件"
+    },
+    {
+        "name": "getChildren",
+        "fun": "public getChildren(void):void",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "读取子内容，返回NULL"
+    },
+    {
+        "name": "getCsvControl",
+        "fun": "public getCsvControl(void):array",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "读取文件的Csv解析控制"
+    },
+    {
+        "name": "getCurrentLine",
+        "fun": "public getCurrentLine(void):string",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "读取文件当前行 等同fgets"
+    },
+    {
+        "name": "getFlags",
+        "fun": "public getFlags(void):int",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "读取文件的标志符信息"
+    },
+    {
+        "name": "getMaxLineLen",
+        "fun": "public getMaxLineLen(void):int",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "返回设置的文件单行最大长度"
+    },
+    {
+        "name": "hasChildren",
+        "fun": "public hasChildren(void):bool",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "检测是否有子节点 返回 FALSE"
+    },
+    {
+        "name": "key",
+        "fun": "public key(void):int",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "返回文件当前行"
+    },
+    {
+        "name": "next",
+        "fun": "public next(void):void",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "移动到下一行"
+    },
+    {
+        "name": "rewind",
+        "fun": "public rewind(void):void",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "返回到文件的第一行"
+    },
+    {
+        "name": "seek",
+        "fun": "public seek(int $line):void",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "移动到指定行"
+    },
+    {
+        "name": "setCsvControl",
+        "fun": "public setCsvControl([string $dlimiter,[,string $enclosure,[,string $escape]]]):void",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "设置Csv解析控制符"
+    },
+    {
+        "name": "setFlags",
+        "fun": "public setFlags(int $flags):void",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "设置文件标识符信息"
+    },
+    {
+        "name": "setMaxLineLen",
+        "fun": "public setMaxLineLen(int $max):void",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "设置文件的单行最大长度"
+    },
+    {
+        "name": "__toString()",
+        "fun": "public __toString()",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "返回文件当前行内容等同current()"
+    },
+    {
+        "name": "valid",
+        "fun": "public valid(void):bool",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "检测是否到达文件末尾"
+    }
+  ]
+}
 		
