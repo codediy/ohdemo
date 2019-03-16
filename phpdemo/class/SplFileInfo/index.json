@@ -1,5 +1,214 @@
-
-		{
-			"classname": "SplFileInfo",
-		}
-		
+{
+  "name" : "SplFileInfo",
+  "detail": "文件或目录或链接的信息访问接口",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "__construct",
+          "fun": "public __construct(string $file_name)",
+          "accessModifier": ["public"],
+          "level":"object",
+          "detail": "使用文件名创建SplFileInfo对象"
+      },
+      {
+          "name": "getATime",
+          "fun": "public getATime(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取文件最近的访问时间"
+      },
+      {
+          "name": "getBaseName",
+          "fun": "public getBaseName([string $suffix]):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取文件的简单名称，不包含目录信息"
+      },
+      {
+          "name": "getCTime",
+          "fun": "public getCTime(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取文件inodex的上次修改时间"
+      },
+      {
+          "name": "getExtension",
+          "fun": "public getExtension(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取文件的扩展名"
+      },
+      {
+          "name": "getFileInfo",
+          "fun": "public getFileInfo([string $class_name]):SplFileInfo",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "使用指定的SplFileInfo的子类创建一个SplFileInfo对象"
+      },
+      {
+          "name": "getFilename",
+          "fun": "public getFilename(void):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取文件的名称信息"
+      },
+      {
+          "name": "getGroup",
+          "fun": "public getGroup(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取文件所属分组的ID"
+      },
+      {
+          "name": "getInode",
+          "fun": "public getInode(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "获取文件的inode编号"
+      },
+	  {
+	      "name": "getLinkTarget",
+	      "fun": "public getLinkTarget(void):string",
+	      "accessModifier": "获取目录的链接信息",
+	      "level": "object",
+	      "detail": "获取链接信息"
+	  },
+	  {
+	      "name": "getMTime",
+	      "fun": "public getMTime(void):int",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "获取最后的修改时间"
+	  },
+	  {
+	      "name": "getOwner",
+	      "fun": "public getOwner(void):int",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "获取文章的所有者ID"
+	  },
+	  {
+	      "name": "getPath",
+	      "fun": "public getPath(void):string",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "获取文件的路径信息"
+	  },
+	  {
+	      "name": "getPathInfo",
+	      "fun": "public getPathInfo([string $class_name]):SplFileInfo",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "获取目录的信息对象SplFileInfo"
+	  },
+	  {
+	      "name": "getPathname",
+	      "fun": "public getPathnam(void):string",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "获取文件的路径信息"
+	  },
+	  {
+	      "name": "getPerms",
+	      "fun": "public getPerms(void):int",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "获取文件的权限信息"
+	  },
+	  {
+	      "name": "getRealPath",
+	      "fun": "public getRealPath(void):string",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "获取文件的真实路径信息"
+	  },
+	  {
+	      "name": "getSize",
+	      "fun": "public getSize(void):int",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "获取文件大小信息"
+	  },
+	  {
+	      "name": "getType",
+	      "fun": "public getType(void):string",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "获取文件类型信息(file,dir)"
+	  },
+	  {
+	      "name": "isDir",
+	      "fun": "public isDir(void):bool",
+	      "accessModifier":["public"],
+	      "level": "object",
+	      "detail": "检测文件是否是目录"
+	  },
+	  {
+	      "name": "isExecutable",
+	      "fun": "public isExecutable(void):bool",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "文件是否可执行"
+	  },
+	  {
+	      "name": "isFile",
+	      "fun": "public isFile(void):bool",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "检测是否是文件"
+	  },
+	  {
+	      "name": "isLink",
+	      "fun": "public isLink(void):bool",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "检测是否一个连接"
+	  },
+	  {
+	      "name": "isReadable",
+	      "fun": "public isReadable(void):bool",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "检测文件是否可读"
+	  },
+	  {
+	      "name": "isWritable",
+	      "fun": "public isWritable(void):bool",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "检测文件是否可写入"
+	  },
+	  {
+	      "name": "openFile",
+	      "fun": "public openFile([string $open_mode,[,bool $use_inlucde_path [,resource $context]):SplFileObject",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "打开文件获取文件内容操作的SplFileObject对象"
+	  },
+	  {
+	      "name": "setFileClass",
+	      "fun": "public setFileClass([string $class_name]):void",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "设置文件打开后对象所属的类"
+	  },
+	  {
+	      "name": "setInfoClass",
+	      "fun": "public setInfoClass([string $class_name]):void",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "设置文件信息对象的类"
+	  },
+	  {
+	      "name": "__toString",
+	      "fun": "public __toString(void):void",
+	      "accessModifier": ["public"],
+	      "level": "object",
+	      "detail": "返回文件的字符串信息"
+	  }
+  ]
+}
