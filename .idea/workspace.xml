@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e0630696-0c3a-4f3c-9506-3797b956e0fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpdemo/class/ArrayIterator/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/phpdemo/class/ArrayIterator/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpdemo/class/ArrayObject/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/phpdemo/class/ArrayObject/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpdemo/class/CachingIterator/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/phpdemo/class/CachingIterator/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpdemo/class/GlobIterator/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/phpdemo/class/GlobIterator/index.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,38 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phpdemo/class/AppendIterator/index.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1505">
-              <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phpdemo/class/ArrayObject/index.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/phpdemo/class/CachingIterator/index.json">
+        <entry file="file://$PROJECT_DIR$/phpdemo/class/GlobIterator/index.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phpdemo/class/ArrayIterator/index.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-298">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="105">
+              <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -66,7 +37,6 @@
         <option value="$PROJECT_DIR$/phpdemo/interface/IteratorAggregate/index.json" />
         <option value="$PROJECT_DIR$/phpdemo/interface/Reflector/index.json" />
         <option value="$PROJECT_DIR$/phpdemo/class/Reflection/index.json" />
-        <option value="$PROJECT_DIR$/phpdemo/tools/phpconstant.json" />
         <option value="$PROJECT_DIR$/phpdemo/tools/phpfp.json" />
         <option value="$PROJECT_DIR$/phpdemo/tools/phpproperties.json" />
         <option value="$PROJECT_DIR$/phpdemo/tools/phpclassmethods.json" />
@@ -105,13 +75,18 @@
         <option value="$PROJECT_DIR$/phpdemo/class/ArrayIterator/index.json" />
         <option value="$PROJECT_DIR$/phpdemo/class/ArrayObject/index.json" />
         <option value="$PROJECT_DIR$/phpdemo/class/CachingIterator/index.json" />
+        <option value="$PROJECT_DIR$/phpdemo/class/Directory/index.json" />
+        <option value="$PROJECT_DIR$/phpdemo/class/DirectoryIterator/index.json" />
+        <option value="$PROJECT_DIR$/phpdemo/tools/phpconstant.json" />
+        <option value="$PROJECT_DIR$/phpdemo/class/FilesystemIterator/index.json" />
+        <option value="$PROJECT_DIR$/phpdemo/class/GlobIterator/index.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1146" />
-    <option name="y" value="412" />
-    <option name="width" value="1060" />
+    <option name="x" value="953" />
+    <option name="y" value="212" />
+    <option name="width" value="910" />
     <option name="height" value="868" />
   </component>
   <component name="ProjectView">
@@ -144,13 +119,6 @@
               <item name="phpdemo" type="462c0819:PsiDirectoryNode" />
               <item name="class" type="462c0819:PsiDirectoryNode" />
               <item name="AppendIterator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ohdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ohdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="phpdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="class" type="462c0819:PsiDirectoryNode" />
-              <item name="CachingIterator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -233,7 +201,7 @@
       <workItem from="1552457501020" duration="5970000" />
       <workItem from="1552527194381" duration="7954000" />
       <workItem from="1552700750958" duration="5326000" />
-      <workItem from="1552708619223" duration="5120000" />
+      <workItem from="1552708619223" duration="7053000" />
     </task>
     <task id="LOCAL-00001" summary="接口与类的json初步结构">
       <created>1552355873918</created>
@@ -431,19 +399,32 @@
       <option name="project" value="LOCAL" />
       <updated>1552716111931</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Class CachingIterator">
+      <created>1552717762932</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1552717762932</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Class Directory DirectorIterator FilesystemIterator">
+      <created>1552719153056</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1552719153056</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39341000" />
+    <option name="totallyTimeSpent" value="41274000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1146" y="412" width="1060" height="868" extended-state="0" />
+    <frame x="953" y="212" width="910" height="868" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26853707" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -453,13 +434,14 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.49778435" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.49630722" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Structure" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,8 +450,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="ReflectionClass" />
-    <MESSAGE value="ReflectionClassConstant ReflectionProperty" />
     <MESSAGE value="gd_info()" />
     <MESSAGE value="getimagesizefromstring()" />
     <MESSAGE value="ArrayAccess,Countable接口" />
@@ -493,27 +473,11 @@
     <MESSAGE value="Interface RecursiveIterator" />
     <MESSAGE value="Interface SeekableIterator Class IteratorIterator" />
     <MESSAGE value="Class AppendIterator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class AppendIterator" />
+    <MESSAGE value="Class CachingIterator" />
+    <MESSAGE value="Class Directory DirectorIterator FilesystemIterator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Class Directory DirectorIterator FilesystemIterator" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/phpdemo/function/internal/array_key_exists/index.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-210" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpdemo/function/internal/array_product/index.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpdemo/function/internal/array_rand/index.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpdemo/interface/Traversable/index.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="7" column="17" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpdemo/interface/IteratorAggregate/index.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -553,13 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpdemo/tools/phpconstant.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -838,8 +795,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/phpdemo/class/CachingIterator/index.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="62" column="28" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="28" />
+        <state relative-caret-position="87">
+          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpdemo/class/Directory/index.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpdemo/class/DirectoryIterator/index.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-753">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpdemo/class/FilesystemIterator/index.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="85" column="19" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpdemo/tools/phpconstant.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpdemo/class/GlobIterator/index.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
         </state>
       </provider>
     </entry>

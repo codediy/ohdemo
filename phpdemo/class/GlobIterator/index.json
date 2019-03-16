@@ -1,5 +1,41 @@
-
-		{
-			"classname": "GlobIterator",
-		}
+{
+  "name": "GlobIterator",
+  "detail": "类glob()的文件迭代器",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    "FilesystemIterator"
+  ],
+  "implements": [
+    "SeekableIterator",
+    "Countable"
+  ],
+  "constants": [
+    ""
+  ],
+  "properties": [
+    ""
+  ],
+  "methods": [
+    {
+      "name": "__construct()",
+      "fun": "public __construct(string $pattern [,int flags])",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "创建类glob()的文件迭代器"
+    },
+    {
+      "name": "count",
+      "fun": "public count(void):int",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "返回符合要求的文件的数目"
+    }
+  ]
+}
 		
