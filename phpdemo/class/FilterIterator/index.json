@@ -1,5 +1,32 @@
-
-		{
-			"classname": "FilterIterator",
-		}
+{
+  "name": "FilterIterator",
+  "detail": "支持过滤的迭代器",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    "IteratorIterator"
+  ],
+  "implements": [
+    "OuterIterator"
+  ],
+  "constants": [
+    ""
+  ],
+  "properties": [
+    ""
+  ],
+  "methods": [
+    {
+      "name": "accept",
+      "fun": "abstract public(void):bool",
+      "accessModifier": [
+        "abstract",
+        "public"
+      ],
+      "level": "object",
+      "detail": "过滤器检测函数"
+    }
+  ]
+}
 		
