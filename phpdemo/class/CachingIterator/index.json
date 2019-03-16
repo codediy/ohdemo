@@ -1,5 +1,66 @@
-
-		{
-			"classname": "CachingIterator",
-		}
-		
+{
+  "name": "CachingIterator",
+  "detail": "带缓存的迭代器",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    "IteratorIterator"
+  ],
+  "implements": [
+    "OuterIterator",
+    "ArrayAccess",
+    "Countable"
+  ],
+  "constants": [
+    {
+        "name": "CALL_TOSTRING",
+        "detail": "",
+        "value": "1"
+    },
+    {
+        "name": "TOSTRING_USE_KEY",
+        "detail": "",
+        "value": "2"
+    },
+    {
+        "name": "TOSTRING_USE_CURRENT",
+        "detail": "",
+        "value": "4"
+    },
+    {
+        "name": "TOSTRING_USER)INNER",
+        "detail": "",
+        "value": "8"
+    },
+    {
+      "name": "CATCH_GET_CHILD",
+      "detail": "",
+      "value": "16"
+    },
+    {
+      "name": "FULL_CACHE",
+      "detail": "",
+      "value": "256"
+    }
+  ],
+  "properties": [
+    ""
+  ],
+  "methods": [
+    {
+      "name": "__construct",
+      "fun": "public __construct(Iterator $iterator,[,int $flags])",
+      "accessModifier": ["public"],
+      "level": "object",
+      "detail": "创建缓存迭代器"
+    },
+    {
+        "name": "getCache",
+        "fun": "public getCache(void):array",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "返回缓存的迭代内容"
+    }
+  ]
+}

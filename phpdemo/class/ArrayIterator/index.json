@@ -1,5 +1,34 @@
-
-		{
-			"classname": "ArrayIterator",
-		}
+{
+  "name": "ArrayIterator",
+  "detail": "数组迭代器",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    ""
+  ],
+  "implements": [
+    "ArrayAccess",
+    "SeekableIterator",
+    "Countable",
+    "Seriablizable"
+  ],
+  "constants": [
+    ""
+  ],
+  "properties": [
+    ""
+  ],
+  "methods": [
+    {
+      "name": "__construct",
+      "fun": "public __construct([mixed $array = array(),[,int $flags]])",
+      "accessModifier": [
+        "public"
+      ],
+      "level": "object",
+      "detail": "创建数组迭代器对象"
+    }
+  ]
+}
 		

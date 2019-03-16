@@ -1,5 +1,47 @@
-
-		{
-			"classname": "ArrayObject",
-		}
+{
+  "name": "ArrayObject",
+  "detail": "数组对象",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    ""
+  ],
+  "implements": [
+    "IteratorAggregate",
+    "ArrayAccess",
+    "Serializable",
+    "Countable"
+  ],
+  "constants": [
+    {
+      "name": "STD_PROP_LIST",
+      "detail": "1",
+      "value": ""
+    },
+    {
+        "name": "ARRAY_AS_PROPS",
+        "detail": "2",
+        "value": ""
+    }
+  ],
+  "properties": [
+    ""
+  ],
+  "methods": [
+    {
+      "name": "__construct",
+      "fun": "public __construct([mixed $input,[,int $flags,[,string $iterator_class]]])",
+      "accessModifier": ["public"],
+      "level": "object",
+      "detail": "创建数组对象，可以指定迭代器类"
+    }
+  ],
+  "info": [
+    "ArrayObject:表示一个类数组的对象",
+    "ArrayIterator:可以用来遍历ArrayObject对象",
+    "ArrayObject默认使用ArrayIterator进行遍历",
+    "ArrayIterator的用途主要在ArrayObject的遍历"
+  ]
+}
 		
