@@ -1,5 +1,56 @@
-
-		{
-			"classname": "php_user_filter",
-		}
-		
+{
+  "name": "php_user_filter",
+  "detail": "自定义stream过滤器",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    ""
+  ],
+  "implements": [
+    ""
+  ],
+  "constants": [
+    ""
+  ],
+  "properties": [
+    {
+      "name": "$filtername",
+      "detail": "过滤器名称"
+    },
+    {
+        "name": "$parmas",
+        "detail": "过滤器参数"
+    }
+  ],
+  "methods": [
+    {
+      "name": "filter",
+      "fun": "public int(resource $in,resource $out,int &$consumed,bool $closing)",
+      "accessModifier":["public"],
+      "level": "object",
+      "detail": "过滤器处理过程"
+    },
+    {
+        "name": "onCreate",
+        "fun": "public onCreate(void):bool",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "过滤器创建时回调函数"
+    },
+    {
+        "name": "onClose",
+        "fun": "public onClose(void):void",
+        "accessModifier": ["public"],
+        "level": "object",
+        "detail": "过滤器关闭时会对函数"
+    }
+  ],
+  "info": [
+    "自定义filter对stream的读写过程进行处理",
+    "filter()是过滤处理的过程",
+    "onCreate(),onClose()是过滤器创建与销毁时的回调函数",
+    "filter可以用于自定义过滤过程类似于Java的servlet的Filter接口",
+    "stream_filter_xx()函数用来关联filter与stream"
+  ]
+}
