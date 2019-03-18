@@ -1,24 +1,37 @@
 {
-  "name" : "$name$",
+  "name": "$name$",
   "detail": "$detail$",
-  "modifier": ["$modifier$"],
-  "extends" : ["$extends$"],
-  "implements": ["$implements$"],
-  "constants": [
-      {
-        "name": "$name$",
-        "detail": "$detail$",
-        "value": "$value$"
-      }
+  "modifier": [
+    "$modifier$"
   ],
-  "properties": ["$properties$"],
+  "extends": [
+    "$extends$"
+  ],
+  "implements": [
+    "$implements$"
+  ],
+  "constants": [
+    {
+      "name": "$name$",
+      "detail": "$detail$",
+      "value": "$value$"
+    }
+  ],
+  "properties": [
+    "$properties$"
+  ],
   "methods": [
-      {
-          "name": "$name$",
-          "fun": "$fun$",
-          "accessModifier": "$access$",
-          "level": "object",
-          "detail": "$detail$"
-      }
+    {
+      "name": "$name$",
+      "fun": "$fun$",
+      "accessModifier": [
+        "$access$"
+      ],
+      "throw": [
+        "$exception$"
+      ],
+      "level": "object",
+      "detail": "$detail$"
+    }
   ]
 }

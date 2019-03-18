@@ -2,7 +2,8 @@
 {
     "name": "$name$",
     "fun": "$fun$",
-    "accessModifier": "$access$",
+    "accessModifier": ["$access$"],
+    "throw":["$exception$"],
     "level": "object",
     "detail": "$detail$"
 }
