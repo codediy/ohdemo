@@ -1,0 +1,193 @@
+{
+  "name" : "streamWrapper",
+  "detail": "流的协议实现类,这个类不是真实存在的，只是为了说明协议需要实现的方法",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "__construct",
+          "fun": "__construct(void)",
+          "accessModifier": [""],
+          "level":"object",
+          "detail": "streamWrapper::stream_open()之后回调"
+      },
+      {
+          "name": "__destruct",
+          "fun": "__destruct(void)",
+          "accessModifier": [""],
+          "level": "object",
+          "detail": "streamWrapper::stream_flush()之后回调"
+      },
+      {
+          "name": "mkdir",
+          "fun": "public mkdir(string $path,int $mode,int $options):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "mkdir()回调函数"
+      },
+      {
+          "name": "rmdir",
+          "fun": "public rmdir(string $path,int $options):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "rmdir()回调函数"
+      },
+      {
+          "name": "rename",
+          "fun": "public rename(string $path,string $to):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "rename()回调函数"
+      },
+      {
+          "name": "dir_opendir",
+          "fun": "public dir_opendir(string $path,int $optiuons):bol",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "opendir()回调函数"
+      },
+      {
+          "name": "dir_readdir",
+          "fun": "public dir_readdir(void):string",
+          "accessModifier":["public"],
+          "level": "object",
+          "detail": "readdir()回调函数"
+      },
+      {
+          "name": "dir_rewinddir",
+          "fun": "public dir_rewinddir(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "rewinddir()回调函数"
+      },
+      {
+          "name": "dir_closedir",
+          "fun": "public dir_closedir(void):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "closedir()函数回调"
+      },
+      {
+          "name": "unlink",
+          "fun": "public unlink(string $path):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "unlink()函数回调"
+      },
+      {
+          "name": "url_stat",
+          "fun": "public url_state(string $path,int $flags):array",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "stat()函数回调"
+      },
+      {
+          "name": "stream_open",
+          "fun": "public stream_open(string $path,string $mode,int $options,string &$opened_path):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "fopen()函数回调"
+      },
+      {
+          "name": "stream_read",
+          "fun": "public stream_read(int $count):string",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "fread()或fgets()回调函数"
+      },
+      {
+          "name": "stream_write",
+          "fun": "public stream_write(string $data):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "fwrite()回调函数"
+      },
+      {
+          "name": "stream_close",
+          "fun": "public stream_close(void):void",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "fclose()回调函数"
+      },
+      {
+          "name": "stream_tell",
+          "fun": "public stream_tell(void):int",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "fseek()返回当前位置的回调函数"
+      },
+      {
+          "name": "stream_cast",
+          "fun": "",
+          "accessModifier": "",
+          "level": "object",
+          "detail": ""
+      },
+      {
+          "name": "stream_eof",
+          "fun": "",
+          "accessModifier": "",
+          "level": "object",
+          "detail": ""
+      },
+      {
+          "name": "stream_flush",
+          "fun": "",
+          "accessModifier": "",
+          "level": "object",
+          "detail": ""
+      },
+      {
+          "name": "stream_eof",
+          "fun": "",
+          "accessModifier": "",
+          "level": "object",
+          "detail": ""
+      },
+      {
+          "name": "stream_lock",
+          "fun": "",
+          "accessModifier": "",
+          "level": "object",
+          "detail": ""
+      },
+      {
+          "name": "stream_metadata",
+          "fun": "",
+          "accessModifier": "",
+          "level": "object",
+          "detail": ""
+      },
+      {
+          "name": "stream_seek",
+          "fun": "",
+          "accessModifier": "",
+          "level": "object",
+          "detail": ""
+      },
+      {
+          "name": "stream_set_option",
+          "fun": "",
+          "accessModifier": "",
+          "level": "object",
+          "detail": ""
+      },
+      {
+          "name": "stream_stat",
+          "fun": "",
+          "accessModifier": "",
+          "level": "object",
+          "detail": ""
+      },
+      {
+          "name": "stream_truncate",
+          "fun": "public stream_truncate(int $new_size):bool",
+          "accessModifier": ["public"],
+          "level": "object",
+          "detail": "ftruncate()裁剪文件为指定大小的函数"
+      }
+  ]
+}
