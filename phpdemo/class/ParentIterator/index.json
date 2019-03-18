@@ -1,5 +1,29 @@
-
-		{
-			"classname": "ParentIterator",
-		}
-		
+{
+  "name": "ParentIterator",
+  "detail": "父级过滤迭代器",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    "recursiveFilterIterator"
+  ],
+  "implements": [
+    "RecursiveIterator",
+    "OuterIterator"
+  ],
+  "constants": [
+    ""
+  ],
+  "properties": [
+    ""
+  ],
+  "methods": [
+    {
+      "name": "__construct",
+      "fun": "public __construct(RecursiveIterator $iterator)",
+      "accessModifier": ["public"],
+      "level": "object",
+      "detail": "父级过滤迭代器"
+    }
+  ]
+}

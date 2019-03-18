@@ -1,5 +1,19 @@
-
-		{
-			"classname": "CallbackFilterIterator",
-		}
+{
+  "name" : "CallbackFilterIterator",
+  "detail": "自定义回调函数过滤迭代器",
+  "modifier": [""],
+  "extends" : ["FilterIterator"],
+  "implements": ["OuterIterator"],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "__construct",
+          "fun": "public __construct(Iterator $iterator,callable $callback)",
+          "accessModifier": ["public"],
+          "level":"object",
+          "detail": "自定义回调函数过滤迭代器"
+      }
+  ]
+}
 		

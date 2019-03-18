@@ -1,0 +1,142 @@
+{
+  "name" : "Collection<E>",
+  "detail": "集合的根接口",
+  "modifier": [""],
+  "extends" : [""],
+  "implements": [""],
+  "constants": [""],
+  "properties": [""],
+  "methods": [
+      {
+          "name": "add",
+          "fun": "boolean add(E e)",
+          "accessModifier": [""],
+          "level":"interface",
+          "detail": "添加元素到集合"
+      },
+      {
+          "name": "addAll",
+          "fun": "boolean addAll(Collection<? extends E> c)",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "添加多个元素到集合"
+      },
+      {
+          "name": "clear",
+          "fun": "void clear()",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "清空集合的元素"
+      },
+      {
+          "name": "contains",
+          "fun": "boolean contains(Object o)",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "检测集合是否包含元素o"
+      },
+      {
+          "name": "containsAll",
+          "fun": "boolean containsAll(Collection<?> c)",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "检测是否包含多个元素"
+      },
+      {
+          "name": "equals",
+          "fun": "boolean equals(Object o)",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "比较是否一个集合对象"
+      },
+      {
+          "name": "hashCode",
+          "fun": "int hashCode()",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "获取集合对象的hash值"
+      },
+      {
+          "name": "isEmpty",
+          "fun": "boolean isEmpty()",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "检测集合是否为空"
+      },
+      {
+          "name": "iterator",
+          "fun": "Iterator<E> iterator()",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "返回集合的迭代器"
+      },
+      {
+          "name": "paralleStream",
+          "fun": "default Stream<E> parallelStream()",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "返回集合的并行操作流对象"
+      },
+      {
+          "name": "remove",
+          "fun": "boolean remove(Object o)",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "删除集合中指定对象"
+      },
+      {
+          "name": "removeAll",
+          "fun": "boolean removeAll(Collection<?> c)",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "删除多个元素"
+      },
+      {
+          "name": "removeIf",
+          "fun": "default boolean removeIf(Predicate<? super E> filter)",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "带有过滤器的删除"
+      },
+      {
+          "name": "retainAll",
+          "fun": "boolean retainAll(Collection<?> c)",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "保留指定元素"
+      },
+      {
+          "name": "spliterator",
+          "fun": "default Spliterator<E> spliterator()",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "创建并行迭代器"
+      },
+      {
+          "name": "stream",
+          "fun": "default Stream<E> stream()",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "创建集合的流操作对象"
+      },
+      {
+          "name": "toArray()",
+          "fun": "object[] toArray()",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "返回集合的数组形式"
+      },
+      {
+          "name": "toArray(T[] a)",
+          "fun": "<T> T[] toArray(T[] a)",
+          "accessModifier": [""],
+          "level": "interface",
+          "detail": "返回集合的指定类型的数组形式"
+      }
+  ],
+  "info": [
+    "Collection接口是集合的基础接口",
+    "Collection接口包含了基本的集合操作add() remove() isEmpty() size()",
+    "Collection接口包含了对元素的迭代操作iterator() spliterator() stream() paralleStream()"
+  ]
+}

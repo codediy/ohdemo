@@ -1,5 +1,29 @@
-
-		{
-			"classname": "RecursiveFilterIterator",
-		}
-		
+{
+  "name": "RecursiveFilterIterator",
+  "detail": "支持过滤的递归迭代器",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    "FileterIterator"
+  ],
+  "implements": [
+    "OuterIterator",
+    "RecursiveIterator"
+  ],
+  "constants": [
+    ""
+  ],
+  "properties": [
+    ""
+  ],
+  "methods": [
+    {
+      "name": "RecursiveFilterIterator",
+      "fun": "",
+      "accessModifier": "",
+      "level": "object",
+      "detail": "支持过滤的递归迭代器"
+    }
+  ]
+}

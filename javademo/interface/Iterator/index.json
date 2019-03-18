@@ -1,0 +1,74 @@
+{
+  "name": "Iterator<E>",
+  "detail": "集合遍历迭代器,通常在集合中实现为内部类",
+  "modifier": [
+    ""
+  ],
+  "extends": [
+    ""
+  ],
+  "implements": [
+    ""
+  ],
+  "constants": [
+    ""
+  ],
+  "properties": [
+    ""
+  ],
+  "methods": [
+    {
+      "name": "forEachRemaining",
+      "fun": "default void forEachRemaining(Consumer<? super E> action)",
+      "accessModifier": [
+        "default",
+        "void"
+      ],
+      "throw": [
+        "NullPointerException"
+      ],
+      "level": "interface",
+      "detail": "对集合中每个元素执行操作"
+    },
+    {
+      "name": "haxNext",
+      "fun": "boolean hasNext()",
+      "accessModifier": [
+        ""
+      ],
+
+      "level": "interface",
+      "detail": "检测是否还有下个元素"
+    },
+    {
+      "name": "next",
+      "fun": "E next()",
+      "accessModifier": [
+        ""
+      ],
+      "throw": [
+        "NoSuchElementException"
+      ],
+      "level": "interface",
+      "detail": "返回迭代器的下一个元素"
+    },
+    {
+      "name": "remove",
+      "fun": "default void remove()",
+      "accessModifier": [
+        ""
+      ],
+
+      "throw": [
+        "UnsupportedOperationException",
+        "IllegalStateException"
+      ],
+      "level": "interface",
+      "detail": "删除集合中迭代器最后一个元素"
+    }
+  ],
+  "info": [
+    "集合类可以通过iterator()方法获取当前集合的迭代器"
+    "iterator()方法见Collection接口"
+  ]
+}
